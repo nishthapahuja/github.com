@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+</head>
+<body>
+	<style>
+	.input_name{
+	width:207px;
+	padding:5px;
+	font-size:18px;
+	}
+	
+	#errorBox{
+	color:#F00;
+	}
+	
+	#sign_user{
+	font-size:14px;
+	color:#FFF;
+	text-align:center;
+	background-color:#3B5998;
+	padding:10px;
+	margin-top:10px;
+	cursor: pointer;
+	}
+	
+	.head_para{
+	font-size:19px;
+	color:#99a2a7;
+	text-align:center;
+	font-weight:normal;
+	}
+	
+	</style>
+	<script>
+		function Submit(){
+			var emailRegex = /^[A-Za-z0-9._]*\@[A-Za-z]*\.[A-Za-z]{2,5}$/;
+			var fname = document.form.Name.value,
+				lname = document.form.LastName.value,
+					if( fname == "" )
+   {
+     document.form.Name.focus() ;
+	 document.getElementById("errorBox").innerHTML = "enter the first name";
+     return false;
+   }
+	if( lname == "" )
+   {
+     document.form.LastName.focus() ;
+	  document.getElementById("errorBox").innerHTML = "enter the last name";
+     return false;
+   }
+   
+   if(fname != '' && lname != ''){
+   document.getElementById("errorBox").innerHTML = "form submitted successfully";
+			}
+	</script>
+	<div id="errorBox"></div>
+        <input type="text" name="Name" value="" placeholder="First Name"  class="input_name" >
+        <input type="text" name="LastName" value="" placeholder="Last Name" class="input_name" >
+    </div>
+	 <div>
+        <p id="sign_user" onClick="Submit()">Sign Up </p>
+      </div>
+</body>
+</html>

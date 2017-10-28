@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1.0"/>
+	<link type="text/css" rel="stylesheet" href="css/home.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+		<div class="box"></div>
+		<div class="pearl">Pearl</div>
+		<div class="tour">Tour And Travel</div>
+		<div class="slider">
+			<div class="slideshow-container">
+			<div class="mySlides fade">
+				<img src="image/tour5.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="image/tour2.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="image/tour1.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="image/tour4.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="image/tour6.jpg" style="width:100%">
+			</div>
+			<a class="prev" onClick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onClick="plusSlides(1)">&#10095;</a>
+			<div style="text-align:center">
+			  <span class="dot" onClick="currentSlide(1)"></span> 
+			  <span class="dot" onClick="currentSlide(2)"></span> 
+			  <span class="dot" onClick="currentSlide(3)"></span> 
+			  <span class="dot" onClick="currentSlide(4)"></span>
+			  <span class="dot" onClick="currentSlide(5)"></span>	
+			</div>
+		</div>
+			<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+				
+				function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
+				
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+				
+				function showSlides(n) {
+				  var i;
+				  var slides = document.getElementsByClassName("mySlides");
+				  var dots = document.getElementsByClassName("dot");
+				  if (n > slides.length) {slideIndex = 1}    
+				  if (n < 1) {slideIndex = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+					  slides[i].style.display = "none";  
+				  }
+				  for (i = 0; i < dots.length; i++) {
+					  dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " active";
+				}
+			 </script>
+		</div>
+		<div class="menu">
+			<ul>
+				<li><a href="Home.html">Home</a></li>
+				<li><a href="About.html">About</a></li>
+				<li><a href="Services.html">Services</a>
+				<li><a href="Tour.html">Tour package</a>
+					<ul>
+						<li><a href="Tour.html">Domestic Tour</a></li>
+						<li><a href="International Tour.html">International Tour</a></li>
+						<li><a href="Museum Tour.html">Museum Tour</a></li>
+						<li><a href="Spiritual Tour.html">Spiritual Tour</a></li>
+						<li><a href="Heritage Tour.html">Heritage Tour</a></li>
+					</ul>
+				</li>
+				<li><a href="Contact.html">Contact</a></li>
+			</ul>
+		</div>
+</header>
+<section>
+	<article>
+		<div class="box1"></div>
+		<div class="welcome">Welcome</div>
+		<div class="international">
+			<p>
+				Pearl International Tours and Travel Limited is a<br> technology driven Travel Management Company in
+				<br> India.With a turnover of   800 crores ,we are a team <br>of professionally qualified travel
+				specialists, spread<br> across our branch offices all over India.A one-stop<br> travel company
+				,we offer travel solutions to a wide <br>network of corporates,sub agents,individual and<br>
+				group travelers.We provide high quality service <br>to our customer,who can access a Country
+				<br>Comprehensive range of travel services,<br>resources and updated information, receiving
+				great<br> value for their travel Investments.
+			</p>
+		</div>
+	</article>
+	<article>
+		<div class="box2"></div>
+		<div class="box3"><li><a href="About.html">Read More</a></li></div>
+		<div id="navigation-container">
+			<div class="l-triangle-top"></div>
+			<div class="l-triangle-bottom"></div>
+			<div class="rectangle">
+				<ul id="navigation">
+					<li>Quick Query Form</li>
+				</ul>
+			</div>
+			<div class="r-triangle-top"></div>
+			<div class="r-triangle-bottom"></div>
+		</div>
+	<form>
+		<div class="name">
+			<label for="choose">Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+			<input id="choose" name="name" required="">
+		</div>
+		<div class="email">
+			<label for="choose">Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+			<input id="choose" name="email" required="">
+		</div>
+		<div class="phone">
+			<label for="choose">Phone No.&nbsp;</label>
+			<input id="choose" name="phone" required="">
+		</div>
+		<div class="address">
+			<label for="choose">Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+			<input id="choose" name="address" required="">
+		</div>
+		<div class="suggestion">
+			<label for="choose">Suggestion&nbsp;</label>
+			<textarea id="choose" name="suggestion" required=""></textarea>
+		</div>
+		<div class="submit">
+			<button>Submit</button>
+		</div>
+	</form>
+	
+	</article>
+	</section>
+    <footer>
+    	<div class="box4"></div>
+        <div class="need">Need Help ?</div>
+        <div class="message"><img src="image/message.png" width="50px"></div>
+		<div class="phone-icon"><img src="image/page1_icon2.png" width="40px"></div>
+		<div class="no">
+			<li>+4542344599</li><br><br>
+			<li>help@pearltours.com</li>
+		</div>
+		<div class="about-heading">
+			<li>Discover</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li>Follow Us</li>
+		</div>
+		<div class="city-tours">
+			<li><a href="Tour.html">Domestic Tour</a></li><br>
+			<li><a href="International Tour.html">International Tour</a></li><br>
+			<li><a href="Spiritual Tour.html">Spiritual Tour</a></li><br>
+			<li><a href="Museum Tour.html">Museum Tour</a></li><br>
+			<li><a href="Heritage Tour.html">Heritage Tour</a></li><br>
+		</div>
+		<div class="icons">
+			<a href="facebook.com"><img src="image/icon1.png" class="icon1"></a>
+			<a href="twitter.com"><img src="image/icon2.png" class="icon2"></a>
+			<a href=""><img src="image/icon3.png" class="icon3"></a>
+			<a href=""><img src="image/icon4.png" class="icon4"></a>
+			<a href=""><img src="image/icon5.png" class="icon5"></a>
+			<a href=""><img src="image/icon6.png" class="icon6"></a>
+		</div>
+	</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,459 @@
+<!DOCTYPE HTML>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1.0"/>
+	<link type="text/css" rel="stylesheet" href="css/museum tour1.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+		<div class="box"></div>
+		<div class="pearl">Pearl</div>
+		<div class="tour">Tour And Travel</div>
+		<div class="slider">
+			<div class="slideshow-container">
+			<div class="mySlides fade">
+				<img src="image/tour5.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="image/tour2.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="image/tour1.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="image/tour4.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="image/tour6.jpg" style="width:100%">
+			</div>
+			<a class="prev" onClick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onClick="plusSlides(1)">&#10095;</a>
+			<div style="text-align:center">
+			  <span class="dot" onClick="currentSlide(1)"></span> 
+			  <span class="dot" onClick="currentSlide(2)"></span> 
+			  <span class="dot" onClick="currentSlide(3)"></span> 
+			  <span class="dot" onClick="currentSlide(4)"></span> 
+			</div>
+		</div>
+			<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+				
+				function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
+				
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+				
+				function showSlides(n) {
+				  var i;
+				  var slides = document.getElementsByClassName("mySlides");
+				  var dots = document.getElementsByClassName("dot");
+				  if (n > slides.length) {slideIndex = 1}    
+				  if (n < 1) {slideIndex = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+					  slides[i].style.display = "none";  
+				  }
+				  for (i = 0; i < dots.length; i++) {
+					  dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " active";
+				}
+			 </script>
+		</div>
+		<div class="menu">
+			<ul>
+				<li><a href="Home.html">Home</a></li>
+				<li><a href="About.html">About</a></li>
+				<li><a href="Services.html">Services</a>
+				<li><a href="Tour.html">Tour package</a>
+					<ul>
+						<li><a href="Tour.html">Domestic Tour</a></li>
+						<li><a href="International Tour.html">International Tour</a></li>
+						<li><a href="Museum Tour.html">Museum Tour</a></li>
+						<li><a href="Spiritual Tour.html">Spiritual Tour</a></li>
+						<li><a href="Heritage Tour.html">Heritage Tour</a></li>
+					</ul>
+				</li>
+				<li><a href="Contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<li>Tour Packages</li>
+			<a href="Tour.html"><img class="domestic" src="image/7749edf7a81a972445ba6f0ea2909d17_1920x1280.jpg"></a>
+			<div class="tour2"><a href="Tour.html">Domestic Tour</a></div>
+			<a href="International Tour.html"><img class="international" src="image/11.07.18-bcp_ft_australia-3_17191420.jpg"></a>
+			<div class="tour3"><a href="International Tour.html">International Tour</a></div>
+			<a href="Museum Tour.html"><img class="museum" src="image/national-gallery-of-art.jpg"></a>
+			<div class="tour4"><a href="Museum Tour.html">Museum Tour</a></div>
+			<a href="Spiritual Tour.html"><img class="spiritual" src="image/6e98050d2bb5eb371a2716bd6d3f32be--fatima-portugal-european-travel.jpg"></a>
+			<div class="tour5"><a href="Spiritual Tour.html">Spiritual Tour</a></div>
+			<a href="Heritage Tour.html"><img class="heritage-1" src="image/5.jpg"></a>
+			<div class="tour6"><a href="Heritage Tour.html">Heritage Tour</a></div>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()"><div class="box10"></span>
+	<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "950px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<div class="tour1">
+		<li>T</li>
+		<li>O</li>
+		<li>U</li>
+		<li>R</li><br>
+		<li>P</li>
+		<li>A</li>
+		<li>C</li>
+		<li>K</li>
+		<li>A</li>
+		<li>G</li>
+		<li>E</li>
+		<li>S</li>
+	</div>
+</header>
+<section>
+	<article>
+			<div class="museum1">Museum Tour</div>
+			<div class="box1"></div>
+			<div class="image1"><img src="image/V644_Tupolev_Tu.124_Indian_Air_Force_(8448371894).jpg" width="700px"></div>
+			<div class="air">Air Force Museum</div>
+			<div class="matter1">
+				<p>
+					Situated at the Palam Air Force Station in Delhi,<br>the Indian Air Force Museumdisplays a huge<br>collection of aeroplanes and armoury 
+					reflecting<br>the Indian Air Force history.It showcases
+					the great<br>achivements of the Indian Air Force along 
+					with the<br>best of what it has stood for in the war 
+					and peace.<br>
+					This museum of the Indian Air Force is worth visiting<br>
+					for children,tourists and aviation entusiasts.It offers<br>
+					an enriching experience along with the in-depth<br>information
+					from the early days when Indian aviators<br>flew for 
+					the Royal Flying Corps during the First World<br>hid War
+					to the Kargil Operations.
+				</p>
+			</div>
+			<div class="learn1"><a href="Museum Tour1.html">Learn More</a></div>
+			<div id="mySidenav1" class="sidenav1">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+		<div class="package1">Air Force Museum</div>
+				<div class="tour20">3 Days</div>
+					<img src="image/air1.jpg" width="140px" class="leh">
+					<a>Delhi &#8680; Agra &#8680; Delhi &#8658; Rs. 10,000 only</a>
+				<div class="tour21">5 Days</div>
+					<img src="image/air2.jpg" width="140px" class="pangong">
+					<a>Delhi &#8680; Agra &#8680; Jaipur &#8680; Delhi &#8658; Rs. 20,000 only</a>
+				<div class="tour22">7 Days</div>
+					<img src="image/air3.jpg" width="140px" class="nubra">
+					<a>Delhi &#8680; Pathankot &#8680; Dharamshala &#8680; Pathankot &#8680; Delhi &#8658; Rs. 30,000 only</a>
+		</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav1()"><div class="box11"></span>
+	<script>
+function openNav1() {
+    document.getElementById("mySidenav1").style.width = "730px";
+}
+
+function closeNav1() {
+    document.getElementById("mySidenav1").style.width = "0";
+}
+</script>
+<div class="tour7">
+		<li>T</li>
+		<li>O</li>
+		<li>U</li>
+		<li>R</li><br>
+		<li>P</li>
+		<li>A</li>
+		<li>C</li>
+		<li>K</li>
+		<li>A</li>
+		<li>G</li>
+		<li>E</li>
+		<li>S</li>
+	</div>
+	</article>
+	<article>
+			<div class="box2"></div>
+			<div class="image2"><img src="image/national-handicrafts-and-handlooms-museum-entrance-gate.jpg" width="700px"></div>
+			<div class="handicrafts">National Handicrafts And<br>Handloom Museum</div>
+			<div class="matter2">
+				<p>
+					The National Handicrafts and Handloom Museum well<br>known as the National Crafts Museum in Delhi is one<br>of the largest crafts museums in India.It functions<br> under the Ministry of Textiles,Government Of India.<br>The crafts Museum complex is an attractive retreat<br>located in the middle of the chaos of Delhi 
+				</p>
+			</div>
+			<div class="learn2"><a href="Museum Tour1.html">Learn More</a></div>
+			<div id="mySidenav2" class="sidenav2">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+		<div class="package2">National Handicrafts And Handlooms Museum</div>
+			<div class="tour23">3 Days</div>
+				<img src="image/air1.jpg" width="140px" class="leh">
+				<a>Delhi &#8680; Agra &#8680; Delhi &#8658; Rs. 10,000 only</a>
+			<div class="tour24">5 Days</div>
+				<img src="image/air2.jpg" width="140px" class="pangong">
+				<a>Delhi &#8680; Agra &#8680; Jaipur &#8680; Delhi &#8658; Rs. 20,000 only</a>
+			<div class="tour25">7 Days</div>
+				<img src="image/air3.jpg" width="140px" class="nubra">
+				<a>Delhi &#8680; Pathankot &#8680; Dharamshala &#8680; Pathankot &#8680; Delhi &#8658; Rs. 30,000 only</a>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav2()"><div class="box12"></span>
+	<script>
+function openNav2() {
+    document.getElementById("mySidenav2").style.width = "730px";
+}
+
+function closeNav2() {
+    document.getElementById("mySidenav2").style.width = "0";
+}
+</script>
+<div class="tour8">
+		<li>T</li>
+		<li>O</li>
+		<li>U</li>
+		<li>R</li><br>
+		<li>P</li>
+		<li>A</li>
+		<li>C</li>
+		<li>K</li>
+		<li>A</li>
+		<li>G</li>
+		<li>E</li>
+		<li>S</li>
+	</div>
+	</article>
+			<article>
+			<div class="box3"></div>
+			<div class="image3"><img src="image/1768117_orig.jpg" width="700px"></div>
+			<div class="mani">Mani Bhavan Gandhi</div>
+			<div class="matter3">
+				<p>
+					It is one of the popular attractions among the<br> tourists because whenever Mahatma Gandhi,<br>father of the nation,visited Mumbai he used to<br> stay in this place.It has now been transformed<br> into a two story building museum and research<br> center.The importance of the place can be<br> gauged out from the fact that various important<br> freedom movements were started from this place.
+				</p>
+			</div>
+			<div class="learn3"><a href="Museum Tour1.html">Learn More</a></div>
+			<div id="mySidenav3" class="sidenav3">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">&times;</a>
+		<div class="package3">Mani Bhavan Gandhi</div>
+			<div class="tour24">3 Days</div>
+				<img src="image/mani.jpg" width="140px" class="leh">
+				<a>Mumbai &#8680; Matheran &#8680; Lonavala &#8680; Khandala &#8680; Alibagh &#8680; Mumbai &#8658; Rs.20,000 only</a>
+			<div class="tour25">5 Days</div>
+				<img src="image/mani2.jpg" width="140px" class="pangong">
+				<a>Mumbai &#8680; Matheran &#8680; Lonavala &#8680; Mahabaleshwar &#8680; Khandala &#8680; Alibagh &#8658; Rs. 30,000 only</a>
+			<div class="tour26">7 Days</div>
+				<img src="image/mani3.jpg" width="140px" class="nubra">
+				<a>Mumbai &#8680; Sindhudura &#8680; Goa &#8680; Vasco &#8680; Kolhapur &#8680; Aurangabad &#8680; Nashik &#8658; Rs. 40,000 only</a>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav3()"><div class="box13"></span>
+	<script>
+function openNav3() {
+    document.getElementById("mySidenav3").style.width = "730px";
+}
+
+function closeNav3() {
+    document.getElementById("mySidenav3").style.width = "0";
+}
+</script>
+<div class="tour9">
+		<li>T</li>
+		<li>O</li>
+		<li>U</li>
+		<li>R</li><br>
+		<li>P</li>
+		<li>A</li>
+		<li>C</li>
+		<li>K</li>
+		<li>A</li>
+		<li>G</li>
+		<li>E</li>
+		<li>S</li>
+	</div>
+	</article>
+	<article>
+			<div class="box5"></div>
+			<div class="image5"><img src="image/37964-Scottish-National-Gallery.jpg"width="700px"></div>
+			<div class="gallery">National Gallery Of<br> Art Museum</div>
+			<div class="matter5">
+				<p>
+					This museum was established in 1954 and displays<br> magnificent modern art of India and many other<br> foreign countries.The gallery was thrown open for<br> the public in 1996.The stunning sculptures of many<br> well known artists and many more are showcased <br> here.The visitors can also find the popular painting<br> of the famous painter M.F.Hussain.
+				</p>
+			</div>
+			<div class="learn5"><a href="Museum Tour1.html">Learn More</a></div>
+			<div id="mySidenav5" class="sidenav5">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav5()">&times;</a>
+		<div class="package5">National Gallery Of Art</div>
+			<div class="tour27">3 Days</div>
+				<img src="image/art1.jpg" width="140px" class="leh">
+				<a>Jaipur &#8680; Pushkar &#8658; Rs. 10,000 only</a>
+			<div class="tour28">5 Days</div>
+				<img src="image/art2.jpg" width="140px" class="pangong">
+				<a>Jaipur &#8680; Ranthambore &#8658; Rs. 20,000 only</a>
+			<div class="tour29">7 Days</div>
+				<img src="image/art3.jpg" width="140px" class="nubra">
+				<a>Jaipur &#8680; Pushkar &#8680; Jodhpur &#8658; Rs.30,000 only</a>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav5()"><div class="box15"></span>
+	<script>
+function openNav5() {
+    document.getElementById("mySidenav5").style.width = "730px";
+}
+
+function closeNav5() {
+    document.getElementById("mySidenav5").style.width = "0";
+}
+</script>
+<div class="tour10">
+		<li>T</li>
+		<li>O</li>
+		<li>U</li>
+		<li>R</li><br>
+		<li>P</li>
+		<li>A</li>
+		<li>C</li>
+		<li>K</li>
+		<li>A</li>
+		<li>G</li>
+		<li>E</li>
+		<li>S</li>
+	</div>
+	</article>
+	<article>
+			<div class="box6"></div>
+			<div class="image6"><img src="image/9044850374_468d5da465_b.jpg" width="700px"></div>
+			<div class="regional">Regional Railway Museum</div>
+			<div class="matter6">
+				<p>
+					Located near South Colony of Perambur,Chennai,<br>Regional Railway Museum is a promising site built<br>to demonstrate the heritage of Indian Railways.A<br> must see spot for the rail-fans visiting Chennai has<br> a good nubers of steam engines used during the<br> rule of British Government of India. 
+				</p>
+			</div>
+			<div class="learn6"><a href="Museum Tour1.html">Learn More</a></div>
+			<div id="mySidenav6" class="sidenav6">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav6()">&times;</a>
+		<div class="package6">Regional Railway Museum</div>
+			<div class="tour28">3 Days</div>
+				<img src="image/regional1.jpg" width="140px" class="leh">
+				<a>Chennai &#8680; Tirupati &#8680; The Vice Regal Lodge &#8680; State Museum &#8658; Rs.15,000 only</a>
+			<div class="tour29">5 Days</div>
+				<img src="image/regional2.jpg" width="140px" class="pangong">
+				<a>State Museum &#8680; Mall & Church Shimla &#8680; Gaiety Theatre &#8680; Scandal Point &#8658; Rs. 25,000 only</a>
+			<div class="tour30">7 Days</div>
+				<img src="image/regional3.jpg" width="140px" class="nubra">
+				<a>Himachal Pradesh &#8680; Manali &#8680; Hidimba Temple &#8680; Manu Maharaj Temple &#8680; Van Vihar Park &#8680; Vashisth &#8658; Rs. 35,000 only</a>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav6()"><div class="box16"></span>
+	<script>
+function openNav6() {
+    document.getElementById("mySidenav6").style.width = "730px";
+}
+
+function closeNav6() {
+    document.getElementById("mySidenav6").style.width = "0";
+}
+</script>
+<div class="tour11">
+		<li>T</li>
+		<li>O</li>
+		<li>U</li>
+		<li>R</li><br>
+		<li>P</li>
+		<li>A</li>
+		<li>C</li>
+		<li>K</li>
+		<li>A</li>
+		<li>G</li>
+		<li>E</li>
+		<li>S</li>
+	</div>
+	</article>
+			<article>
+			<div class="box7"></div>
+			<div class="image7"><img src="image/Bangalore_Visvesvaraya_Industrial_Technological_Museum_17.jpg" width="700px"></div>
+			<div class="industrail">Visvesvaraya Industrial And <br>Technological Museum</div>
+			<div class="matter7">
+				<p>
+					Managed and maintained by the National Council<br> Of Science Museum (NCSM) the Visvesvaraya Industrial<br> and technological museum is established to pay a tribute<br> to Sir M.Visvesvaraya a statesman who worked<br> determinedly to bring science and technology into <br>the life of the common man.Located on Kasturba Road,<br>this museum has interactive exhibits and displays.
+				</p>
+			</div>
+			<div class="learn7"><a href="Museum Tour1.html">Learn More</a></div>
+		</div>
+		<div id="mySidenav7" class="sidenav7">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav7()">&times;</a>
+		<div class="package7">Visvesvaraya Industrial And Technological Museum</div>
+			<div class="tour31">3 Days</div>
+				<img src="image/industrial1.jpg" width="140px" class="leh">
+				<a>Ooty &#868; Comibatore &#8680; Bangalore &#8658; Rs. 15,000 only</a>
+			<div class="tour32">5 Days</div>
+				<img src="image/industrial2.jpg" width="140px" class="pangong">
+				<a>Ooty &#8680; Bangalore &#8680; Mysore &#8680; Coorg &#8658; Rs. 25,000 only</a>
+			<div class="tour33">7 Days</div>
+				<img src="image/industrial3.jpg" width="140px" class="nubra">
+				<a>Bangalore &#8680; Mysore &#8680; Coorg &#8658; Rs. 35,000 only</a>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav7()"><div class="box17"></span>
+	<script>
+function openNav7() {
+    document.getElementById("mySidenav7").style.width = "730px";
+}
+
+function closeNav7() {
+    document.getElementById("mySidenav7").style.width = "0";
+}
+</script>
+<div class="tour12">
+		<li>T</li>
+		<li>O</li>
+		<li>U</li>
+		<li>R</li><br>
+		<li>P</li>
+		<li>A</li>
+		<li>C</li>
+		<li>K</li>
+		<li>A</li>
+		<li>G</li>
+		<li>E</li>
+		<li>S</li>
+	</div>
+	</article>
+</section>
+<footer>
+    	<div class="box4"></div>
+        <div class="help">Need Help ?</div>
+        <div class="message"><img src="image/message.png" width="50px"></div>
+		<div class="phone-icon"><img src="image/page1_icon2.png" width="40px"></div>
+		<div class="no">
+			<li>+4542344599</li><br><br>
+			<li>help@pearltours.com</li>
+		</div>
+		<div class="about-heading">
+			<li>Discover</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</div>
+		<div class="follow">
+			 <li>Follow Us</li>
+		</div>
+		<div class="city-tours">
+			<li><a href="Tour.html">Domestic Tour</a></li><br>
+			<li><a href="International Tour.html">International Tour</a></li><br>
+			<li><a href="Spiritual Tour.html">Spiritual Tour</a></li><br>
+			<li><a href="Museum Tour.html">Museum Tour</a></li><br>
+			<li><a href="Heritage Tour.html">Heritage Tour</a></li><br>
+		</div>
+		<div class="icons">
+			<a href="facebook.com"><img src="image/icon1.png" class="icon1"></a>
+			<a href="twitter.com"><img src="image/icon2.png" class="icon2"></a>
+			<a href=""><img src="image/icon3.png" class="icon3"></a>
+			<a href=""><img src="image/icon4.png" class="icon4"></a>
+			<a href=""><img src="image/icon5.png" class="icon5"></a>
+			<a href=""><img src="image/icon6.png" class="icon6"></a>
+		</div>
+   	</footer>
+	
+</body>
+</html>
+	

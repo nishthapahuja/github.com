@@ -1,0 +1,497 @@
+<!DOCTYPE HTML>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1.0"/>
+	<link type="text/css" rel="stylesheet" href="css/heritage tour1.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+		<div class="box"></div>
+		<div class="pearl">Pearl</div>
+		<div class="tour">Tour And Travel</div>
+		<div class="slider">
+			<div class="slideshow-container">
+			<div class="mySlides fade">
+				<img src="image/tour5.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="image/tour2.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="image/tour1.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="image/tour4.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="image/tour6.jpg" style="width:100%">
+			</div>
+			<a class="prev" onClick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onClick="plusSlides(1)">&#10095;</a>
+			<div style="text-align:center">
+			  <span class="dot" onClick="currentSlide(1)"></span> 
+			  <span class="dot" onClick="currentSlide(2)"></span> 
+			  <span class="dot" onClick="currentSlide(3)"></span> 
+			  <span class="dot" onClick="currentSlide(4)"></span> 
+			</div>
+		</div>
+			<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+				
+				function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
+				
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+				
+				function showSlides(n) {
+				  var i;
+				  var slides = document.getElementsByClassName("mySlides");
+				  var dots = document.getElementsByClassName("dot");
+				  if (n > slides.length) {slideIndex = 1}    
+				  if (n < 1) {slideIndex = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+					  slides[i].style.display = "none";  
+				  }
+				  for (i = 0; i < dots.length; i++) {
+					  dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " active";
+				}
+			 </script>
+		</div>
+		<div class="menu">
+			<ul>
+				<li><a href="Home.html">Home</a></li>
+				<li><a href="About.html">About</a></li>
+				<li><a href="Services.html">Services</a>
+				<li><a href="Tour.html">Tour package</a>
+					<ul>
+						<li><a href="Tour.html">Domestic Tour</a></li>
+						<li><a href="International Tour.html">International Tour</a></li>
+						<li><a href="Museum Tour.html">Museum Tour</a></li>
+						<li><a href="Spiritual Tour.html">Spiritual Tour</a></li>
+						<li><a href="Heritage Tour.html">Heritage Tour</a></li>
+					</ul>
+				</li>
+				<li><a href="Contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<li>Tour Packages</li>
+			<a href="Tour.html"><img class="domestic" src="image/7749edf7a81a972445ba6f0ea2909d17_1920x1280.jpg"></a>
+			<div class="tour2"><a href="Tour.html">Domestic Tour</a></div>
+			<a href="International Tour.html"><img class="international" src="image/11.07.18-bcp_ft_australia-3_17191420.jpg"></a>
+			<div class="tour3"><a href="International Tour.html">International Tour</a></div>
+			<a href="Museum Tour.html"><img class="museum" src="image/national-gallery-of-art.jpg"></a>
+			<div class="tour4"><a href="Museum Tour.html">Museum Tour</a></div>
+			<a href="Spiritual Tour.html"><img class="spiritual" src="image/6e98050d2bb5eb371a2716bd6d3f32be--fatima-portugal-european-travel.jpg"></a>
+			<div class="tour5"><a href="Spiritual Tour.html">Spiritual Tour</a></div>
+			<a href="Heritage Tour.html"><img class="heritage-1" src="image/5.jpg"></a>
+			<div class="tour6"><a href="Heritage Tour.html">Heritage Tour</a></div>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()"><div class="box10"></span>
+	<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "950px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<div class="tour1">
+		<li>T</li>
+		<li>O</li>
+		<li>U</li>
+		<li>R</li><br>
+		<li>P</li>
+		<li>A</li>
+		<li>C</li>
+		<li>K</li>
+		<li>A</li>
+		<li>G</li>
+		<li>E</li>
+		<li>S</li>
+	</div>
+</header>
+<section>
+	<article>
+		<div class="heritage">Heritage Tour</div>
+		<div class="box1"></div>
+		<div class="image1"><img src="image/gujarat2.jpg" width="700px"></div>
+		<div class="gujarat">Gujarat</div>
+		<div class="matter1">
+			<p>
+				Gujarat ,India's western,ost state,has varied terrain<br>and numerous sacred sites.In the urban center of<br>Ahmedabad is the Calico Museum of Textiles,displaying<br>antique and modern Indian fabrics.Spiritual leader<br>Mahatma Gandhi's base from 1917-1930 was 		Sabarmati<br>Ashram ,where his living quarters remain on view.<br>The Jama Masjid built in the 15th century,has a huge<br>courtyard and	 				a columned design.
+			</p>
+		</div>
+		<div class="learn1">Learn more</div>
+		<div id="mySidenav1" class="sidenav1">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+		<div class="package1">Gujarat</div>
+			<div class="tour20">3 Days</div>
+				<img src="image/gujarat1.jpg" width="140px" class="leh">
+				<a>Gujarat &#8680; Dwarka &#8680; Somnath &#8658; Rs.15,000 only</a>
+			<div class="tour21">5 Days</div>
+				<img src="image/gujarat2.jpg" width="140px" class="pangong">
+				<a>Ahmedabad &#8680; Lothal &#8680; Patan &#8680; Modhera &#8680; Ahmedabad &#8658; Rs. 25,000 only</a>
+			<div class="tour22">7 Days</div>
+				<img src="image/gujarat3.jpg" width="140px" class="nubra">
+				<a>Ahmedabad &#8680; Dasada &#8680; Gir National Park &#8680; Sayla &#8680; Ahmedabad &#8658; Rs. 35,000 only</a>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav1()"><div class="box11"></span>
+	<script>
+function openNav1() {
+    document.getElementById("mySidenav1").style.width = "730px";
+}
+
+function closeNav1() {
+    document.getElementById("mySidenav1").style.width = "0";
+}
+</script>
+<div class="tour7">
+		<li>T</li>
+		<li>O</li>
+		<li>U</li>
+		<li>R</li><br>
+		<li>P</li>
+		<li>A</li>
+		<li>C</li>
+		<li>K</li>
+		<li>A</li>
+		<li>G</li>
+		<li>E</li>
+		<li>S</li>
+	</div>
+	</article>
+    <article>
+		<div class="box2"></div>
+		<div class="image2"><img src="image/amritsar.jpg" width="700px"></div>
+		<div class="amritsar">Amritsar</div>
+		<div class="matter2">
+			<p>
+				Amritsar is a city in the northwestern Indian state<br>of Punjab,28 kilometers from the border with Pakistan.<br>At the center of its walled old town,the gilded<br>Golden Temple is the holiest gurdwara of the Sikh<br>religion.It's at the end of causeway,surrounded by the<br>sacred Amrit Sarovar tank where pilgrims bathe.
+			</p>
+		</div>
+		<div class="learn2">Learn More</div>
+		<div id="mySidenav2" class="sidenav2">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+		<div class="package2">Amritsar</div>
+			<div class="tour23">3 Days</div>
+				<img src="image/amritsar1.jpg" width="140px" class="leh">
+				<a>Golden &#8680; Wagah &#8680; Temple &#8680; Border Tour &#8658; Rs.10,000 only</a>
+			<div class="tour24">5 Days</div>
+				<img src="image/amritsar2.jpg" width="140px" class="pangong">
+				<a>Delhi &#8680; Agra &#8680; Jaipur &#8680; Delhi &#8680; Shimla &#8658; Rs. 20,000 only</a>
+			<div class="tour25">7 Days</div>
+				<img src="image/amritsar3.jpg" width="140px" class="nubra">
+				<a>Amritsar &#8680; Srinagar &#8680; Pahalgam &#8680; Chandanwari &#8680; Sheshnag &#8680; Panjtarni &#8680; Baltal &#8680; Sonamara &#8680; Srinagar &#8658; Rs. 30,000 only</a>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav2()"><div class="box12"></span>
+	<script>
+function openNav2() {
+    document.getElementById("mySidenav2").style.width = "730px";
+}
+
+function closeNav2() {
+    document.getElementById("mySidenav2").style.width = "0";
+}
+</script>
+<div class="tour8">
+		<li>T</li>
+		<li>O</li>
+		<li>U</li>
+		<li>R</li><br>
+		<li>P</li>
+		<li>A</li>
+		<li>C</li>
+		<li>K</li>
+		<li>A</li>
+		<li>G</li>
+		<li>E</li>
+		<li>S</li>
+	</div>
+	</article>
+    <article>
+		<div class="box3"></div>
+		<div class="image3"><img src="image/mp.jpg" width="700px"></div>
+		<div class="mp">Madhya Pradesh</div>
+		<div class="matter3">
+			<p>
+				Madhya Pradesh,a large state in central India,retains<br>landmarks from eras throughout Indian history.Begun<br>in the 10th century,its	Hindu and Jain temples at<br>Khajuraho are renowned for their carving of erotic<br>scenes,most prominently Kandariya Mahadeva,a temple<br>with more than 800 sculptures.The eastern Bandhavgearh<br>and Kanha national parks,noted Bengal Tiger santuries,<br>offer guided safaris.
+			</p>
+		</div>
+		<div class="learn3">Learn More</div>
+		<div id="mySidenav3" class="sidenav3">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">&times;</a>
+		<div class="package3">Madhya Pradesh</div>
+			<div class="tour24">3 Days</div>
+				<img src="image/mp1.jpg" width="140px" class="leh">
+				<a>Pipariya &#8680; Pachmarhi &#8680; Pipariya &#8658; Rs. 15,000 only</a>
+			<div class="tour25">5 Days</div>
+				<img src="image/mp2.jpg" width="140px" class="pangong">
+				<a>Gwalior &#8680; Orchha &#8680; Khajuraho &#8658; Rs. 25,000 only</a>
+			<div class="tour26">7 Days</div>
+				<img src="image/mp3.jpg" width="140px" class="nubra">
+				<a>Delhi &#8680; Bhopal &#8680; Sanchi &#8680; Ujjain &#8680; Indore &#8680; Mandu &#8658; Rs.35,000 only</a>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav3()"><div class="box13"></span>
+	<script>
+function openNav3() {
+    document.getElementById("mySidenav3").style.width = "730px";
+}
+
+function closeNav3() {
+    document.getElementById("mySidenav3").style.width = "0";
+}
+</script>
+<div class="tour9">
+		<li>T</li>
+		<li>O</li>
+		<li>U</li>
+		<li>R</li><br>
+		<li>P</li>
+		<li>A</li>
+		<li>C</li>
+		<li>K</li>
+		<li>A</li>
+		<li>G</li>
+		<li>E</li>
+		<li>S</li>
+	</div>
+	</article>
+	<article>
+		<div class="box5"></div>
+		<div class="image5"><img src="image/orissa.jpg" width="700px"></div>
+		<div class="orissa">Orissa</div>
+		<div class="matter5">
+			<p>
+				Orissa an eastern Indian state on the Bay of Bengal,<br>is known for its tribal cultures and its many ancient<br>Hindu temples.The capital,Bhubaneshwar,is home to<br>hundreds of temples,notablythe intricately-carved<br>Mukteshvara.The Lingaraj Temple complex,dating to<br>the 11th century,is set around sacred Bindusagar Lake.<br>The Orissa State Museum is focused on the area's<br>history and environment
+			</p>
+		</div>
+		<div class="learn5">Learn More</div>
+		<div id="mySidenav5" class="sidenav5">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav5()">&times;</a>
+		<div class="package5">Orissa</div>
+			<div class="tour27">3 Days</div>
+				<img src="image/orissa1.jpg" width="140px" class="leh">
+				<a>Bhubaneswar &#8680; Lalitgiri &#8680; Ratnagiri &#8680; Cuttack &#8658; Rs. 20,000 only</a>
+			<div class="tour28">5 Days</div>
+				<img src="image/orissa2.jpg" width="140px" class="pangong">
+				<a>Bhubaneswar &#8680; Puri &#8680; Konark &#8680; Chilika &#8680; Pipil &#8680; Dhauli &#8658; Rs. 30,000 only</a>
+			<div class="tour29">7 Days</div>
+				<img src="image/orissa3.jpg" width="140px" class="nubra">
+				<a>Bhubaneswar &#8680; Lalitgiri &#8680; Ratnagiri &#8680; Cuttack &#8680; Konark &#8680; Puri &#8680; Chilika &#8658; Rs. 40,000 only</a>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav5()"><div class="box15"></span>
+	<script>
+function openNav5() {
+    document.getElementById("mySidenav5").style.width = "730px";
+}
+
+function closeNav5() {
+    document.getElementById("mySidenav5").style.width = "0";
+}
+</script>
+<div class="tour10">
+		<li>T</li>
+		<li>O</li>
+		<li>U</li>
+		<li>R</li><br>
+		<li>P</li>
+		<li>A</li>
+		<li>C</li>
+		<li>K</li>
+		<li>A</li>
+		<li>G</li>
+		<li>E</li>
+		<li>S</li>
+	</div>
+	</article>
+    <article>
+		<div class="box6"></div>
+		<div class="image6"><img src="image/rajasthan.jpg" width="700px"></div>
+		<div class="rajasthan">Rajasthan</div>
+		<div class="matter6">
+			<p>
+				Rajasthan is a northern Indian state bordering<br>Pakisthan.Its palaces and forts are reminders of the<br>many kingdoms that			historically vied for the region.In<br>its capital,Jaipur are the 18th century City Palace and<br>Hawa Mahal,a former cloister for royal women,fronted<br>by a 5-story pink-sandstone screen.Amber Fort,near by<br>hill,was built by a Rajput prince in the early 1600s.
+			</p>
+		</div>
+		<div class="learn6">Learn More</div>
+		<div id="mySidenav6" class="sidenav6">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav6()">&times;</a>
+		<div class="package6">Rajasthan</div>
+			<div class="tour28">3 Days</div>
+				<img src="image/rajasthan1.jpg" width="140px" class="leh">
+				<a>Delhi &#8680; Agra &#8680; Fatehpur Sikri &#8680; Jaipur &#8658; Rs. 10,000 only</a>
+			<div class="tour29">5 Days</div>
+				<img src="image/rajasthan2.jpg" width="140px" class="pangong">
+				<a>Delhi &#8680; Greater Noida Jaypee Greens &#8680; Agra &#8680; Jaipur &#8658; Rs. 20,000 only</a>
+			<div class="tour30">7 Days</div>
+				<img src="image/rajasthan3.jpg" width="140px" class="nubra">
+				<a>Jaipur &#8680; Agra &#8680; Bharatpur &#8680; Karauli &#8680; Talabgon &#8658; Rs. 30,000 only</a>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav6()"><div class="box16"></span>
+	<script>
+function openNav6() {
+    document.getElementById("mySidenav6").style.width = "730px";
+}
+
+function closeNav6() {
+    document.getElementById("mySidenav6").style.width = "0";
+}
+</script>
+<div class="tour11">
+		<li>T</li>
+		<li>O</li>
+		<li>U</li>
+		<li>R</li><br>
+		<li>P</li>
+		<li>A</li>
+		<li>C</li>
+		<li>K</li>
+		<li>A</li>
+		<li>G</li>
+		<li>E</li>
+		<li>S</li>
+	</div>
+	</article>
+   	<article>
+		<div class="box7"></div>
+		<div class="image7"><img src="image/south.jpg" width="700px"></div>
+		<div class="si">South India</div>
+		<div class="matter7">
+			<p>
+				South India is the area encompassing the Indian<br>states of Andhra Pradesh,Karnataka,Kerala,Tamil Nadu<br>and Telangana as well as the nion territories of Andaman<br>and Nicobar,Lakshadweep and Puducherry,occuping<br>19.31% of India's area.Covering the Southern part of<br>the peninsular Deccan Plateau,South India is bounded<br>by the Bay Of Bengal in the east Arabian Sea in the<br>west and the Indain Ocean in the South.
+			</p>
+		</div>
+		<div class="learn7">Learn More</div>
+		<div id="mySidenav7" class="sidenav7">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav7()">&times;</a>
+		<div class="package7">South India</div>
+			<div class="tour31">3 Days</div>
+				<img src="image/south1.jpg" width="140px" class="leh">
+				<a>Chennai &#8680; Tirupati &#8680; Tiruvannamalai &#8680; Madurai &#8658; Rs. 15,000 only</a>
+			<div class="tour32">5 Days</div>
+				<img src="image/south2.jpg" width="140px" class="pangong">
+				<a>Madurai &#8680; Rameshwaram &#8680;  Kanyakumari &#8680; Kovalam &#8658; Rs. 25,000 only</a>
+			<div class="tour33">7 Days</div>
+				<img src="image/south3.jpg" width="140px" class="nubra">
+				<a>Bangalore &#8680; Hospet &#8680; Badami &#8680; Bangalore &#8658; Rs. 35,000 only</a>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav7()"><div class="box17"></span>
+	<script>
+function openNav7() {
+    document.getElementById("mySidenav7").style.width = "730px";
+}
+
+function closeNav7() {
+    document.getElementById("mySidenav7").style.width = "0";
+}
+</script>
+<div class="tour12">
+		<li>T</li>
+		<li>O</li>
+		<li>U</li>
+		<li>R</li><br>
+		<li>P</li>
+		<li>A</li>
+		<li>C</li>
+		<li>K</li>
+		<li>A</li>
+		<li>G</li>
+		<li>E</li>
+		<li>S</li>
+	</div>
+	</article>
+	<article>
+    	<div class="box8"></div>
+		<div class="image8"><img src="image/himalaya1.jpg" width="700px"></div>
+		<div class="himalaya">Himalaya</div>
+		<div class="matter8">
+			<p>
+				The Himalayan range has many of the Earth's<br>highest peaks,including the highest,Mount Everest.<br>The Himalayas include over fifty mountains exceeding<br>7,200 metres in elevation,including ten of the fourteen<br>8000m peaks.By contrast,the higest peak outside<br>Asia-Aconcagya,in the Andes-is 6,961 metres tall.
+			</p>
+		</div>
+		<div class="learn8">Learn More</div>
+		<div id="mySidenav8" class="sidenav8">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav8()">&times;</a>
+		<div class="package8">Himalaya</div>
+			<div class="tour34">3 Days</div>
+				<img src="image/himalaya1.jpg" width="140px" class="leh">
+				<a>Guwahati &#8680; Shillong &#8680; Cherrapunji &#8658; Rs. 20,000 only</a>
+			<div class="tour35">5 Days</div>
+				<img src="image/himalaya3.jpg" width="140px" class="pangong">
+				<a>Delhi &#8680; Kathgodam &#8680; Pithoragarh &#8680; Delhi &#8658; Rs. 30,000 only</a>
+			<div class="tour36">7 Days</div>
+				<img src="image/himalaya2.jpg" width="140px" class="nubra">
+				<a>Manali &#8680; Solang Valley &#8680; Manali &#8680; Gulaba &#8680; Sethan Village &#8658; Rs. 40,000 only</a>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav8()"><div class="box18"></span>
+	<script>
+function openNav8() {
+    document.getElementById("mySidenav8").style.width = "730px";
+}
+
+function closeNav8() {
+    document.getElementById("mySidenav8").style.width = "0";
+}
+</script>
+<div class="tour13">
+		<li>T</li>
+		<li>O</li>
+		<li>U</li>
+		<li>R</li><br>
+		<li>P</li>
+		<li>A</li>
+		<li>C</li>
+		<li>K</li>
+		<li>A</li>
+		<li>G</li>
+		<li>E</li>
+		<li>S</li>
+	</div>
+	</article>
+</section>
+<footer>
+    	<div class="box4"></div>
+        <div class="need">Need Help ?</div>
+        <div class="message"><img src="image/message.png" width="50px"></div>
+		<div class="phone-icon"><img src="image/page1_icon2.png" width="40px"></div>
+		<div class="no">
+			<li>+4542344599</li><br><br>
+			<li>help@pearltours.com</li>
+		</div>
+		<div class="about-heading">
+			<li>Discover</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li>Follow Us</li>
+		</div>
+		<div class="city-tours">
+			<li><a href="Tour.html">Domestic Tour</a></li><br>
+			<li><a href="International Tour.html">International Tour</a></li><br>
+			<li><a href="Spiritual Tour.html">Spiritual Tour</a></li><br>
+			<li><a href="Museum Tour.html">Museum Tour</a></li><br>
+			<li><a href="Heritage Tour.html">Heritage Tour</a></li><br>
+		</div>
+		<div class="icons">
+			<a href="facebook.com"><img src="image/icon1.png" class="icon1"></a>
+			<a href="twitter.com"><img src="image/icon2.png" class="icon2"></a>
+			<a href=""><img src="image/icon3.png" class="icon3"></a>
+			<a href=""><img src="image/icon4.png" class="icon4"></a>
+			<a href=""><img src="image/icon5.png" class="icon5"></a>
+			<a href=""><img src="image/icon6.png" class="icon6"></a>
+		</div>
+</footer>
+</body>
+</html>
+
+
+
+
+	

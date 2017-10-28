@@ -1,0 +1,542 @@
+<!DOCTYPE HTML>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1.0"/>
+	<link type="text/css" rel="stylesheet" href="css/tour.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+		<div class="box"></div>
+		<div class="pearl">Pearl</div>
+		<div class="tour">Tour And Travel</div>
+		<div class="slider">
+			<div class="slideshow-container">
+			<div class="mySlides fade">
+				<img src="image/tour5.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="image/tour2.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="image/tour1.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="image/tour4.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="image/tour6.jpg" style="width:100%">
+			</div>
+			<a class="prev" onClick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onClick="plusSlides(1)">&#10095;</a>
+			<div style="text-align:center">
+			  <span class="dot" onClick="currentSlide(1)"></span> 
+			  <span class="dot" onClick="currentSlide(2)"></span> 
+			  <span class="dot" onClick="currentSlide(3)"></span> 
+			  <span class="dot" onClick="currentSlide(4)"></span> 
+			</div>
+		</div>
+			<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+				
+				function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
+				
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+				
+				function showSlides(n) {
+				  var i;
+				  var slides = document.getElementsByClassName("mySlides");
+				  var dots = document.getElementsByClassName("dot");
+				  if (n > slides.length) {slideIndex = 1}    
+				  if (n < 1) {slideIndex = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+					  slides[i].style.display = "none";  
+				  }
+				  for (i = 0; i < dots.length; i++) {
+					  dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " active";
+				}
+			 </script>
+		</div>
+		<div class="menu">
+			<ul>
+				<li><a href="Home.html">Home</a></li>
+				<li><a href="About.html">About</a></li>
+				<li><a href="Services.html">Services</a>
+				<li><a href="Tour.html">Tour package</a>
+					<ul>
+						<li><a href="Tour.html">Domestic Tour</a></li>
+						<li><a href="International Tour.html">International Tour</a></li>
+						<li><a href="Museum Tour.html">Museum Tour</a></li>
+						<li><a href="Spiritual Tour.html">Spiritual Tour</a></li>
+						<li><a href="Heritage Tour.html">Heritage Tour</a></li>
+					</ul>
+				</li>
+				<li><a href="Contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<li>Tour Packages</li>
+			<a href="Tour.html"><img class="domestic" src="image/7749edf7a81a972445ba6f0ea2909d17_1920x1280.jpg"></a>
+			<div class="tour2"><a href="Tour.html">Domestic Tour</a></div>
+			<a href="International Tour.html"><img class="international" src="image/11.07.18-bcp_ft_australia-3_17191420.jpg"></a>
+			<div class="tour3"><a href="International Tour.html">International Tour</a></div>
+			<a href="Museum Tour.html"><img class="museum" src="image/national-gallery-of-art.jpg"></a>
+			<div class="tour4"><a href="Museum Tour.html">Museum Tour</a></div>
+			<a href="Spiritual Tour.html"><img class="spiritual" src="image/6e98050d2bb5eb371a2716bd6d3f32be--fatima-portugal-european-travel.jpg"></a>
+			<div class="tour5"><a href="Spiritual Tour.html">Spiritual Tour</a></div>
+			<a href="Heritage Tour.html"><img class="heritage-1" src="image/5.jpg"></a>
+			<div class="tour6"><a href="Heritage Tour.html">Heritage Tour</a></div>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()"><div class="box10"></span>
+	<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "950px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<div class="tour1">
+		<li>T</li>
+		<li>O</li>
+		<li>U</li>
+		<li>R</li><br>
+		<li>P</li>
+		<li>A</li>
+		<li>C</li>
+		<li>K</li>
+		<li>A</li>
+		<li>G</li>
+		<li>E</li>
+		<li>S</li>
+	</div>
+</header>
+<section>
+		<article>
+			<div class="domestic1">Domestic Tour</div>
+			<div class="box1"></div>
+			<div class="image1"><img src="image/01ladakh.jpg" width="720px"></div>
+			<div class="ladakh">Ladakh</div>
+			<div class="matter1">
+				<p>
+					A rock strewn set enchanted with rich <br><br>golden-red-green themed monasteries
+				</p>
+			</div>
+			<div class="learn1"><a href="Tour1.html">Learn More</a></div>
+			<div id="mySidenav1" class="sidenav1">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+			<div class="package1">Ladakh</div>
+			<div class="tour20">3 Days</div>
+				<img src="image/ladakh1.jpg" width="120px" class="leh">
+				<a>Leh &#8680; Khardungla &#8680; Leh &#8658; Rs. 15,000 only</a>
+			<div class="tour21">5 Days</div>
+				<img src="image/ladakh2.jpg" width="120px" class="pangong">
+				<a>Leh &#8680; Pangong Lake &#8680; Khardungla &#8680; Leh &#8658; Rs. 25,000 only</a>
+			<div class="tour22">7 Days</div>
+				<img src="image/ladakh3.jpg" width="140px" class="nubra">
+				<a>Leh &#8680; Nubra Valley &#8680; Pangong Lake &#8680; Khardungla &#8680; Leh &#8658; Rs. 35,000 only</a>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav1()"><div class="box11"></span>
+	<script>
+function openNav1() {
+    document.getElementById("mySidenav1").style.width = "730px";
+}
+
+function closeNav1() {
+    document.getElementById("mySidenav1").style.width = "0";
+}
+</script>
+<div class="tour7">
+		<li>T</li>
+		<li>O</li>
+		<li>U</li>
+		<li>R</li><br>
+		<li>P</li>
+		<li>A</li>
+		<li>C</li>
+		<li>K</li>
+		<li>A</li>
+		<li>G</li>
+		<li>E</li>
+		<li>S</li>
+	</div>
+		</article>
+		<article>
+			<div class="box2"></div>
+			<div class="image2"><img src="image/Goa tours.jpg" width="700px"></div>
+			<div class="goa">Goa</div>
+			<div class="matter2">
+				<p>
+					The quintessential beach destination of India,<br><br>Goa is blessed with inexhaustible charms with
+				</p>
+			</div>
+			<div class="learn2"><a href="Tour1.html">Learn More</a></div>
+			<div id="mySidenav2" class="sidenav2">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+			<div class="package2">Goa</div>
+			<div class="tour23">3 Days</div>
+				<img src="image/goa1.jpg" width="140px" class="leh">
+				<a>Goa &#8680; North Goa &#8680; South Goa &#8680; Goa &#8658; Rs. 10,000 only</a>
+			<div class="tour24">5 Days</div>
+				<img src="image/goa2.jpg" width="140px" class="pangong">
+				<a>Panjim &#8680; Thivim &#8680; Aldona &#8680; Arvalem &#8680; Goa Backwater &#8658; Rs. 20,000 only</a>
+			<div class="tour25">7 Days</div>
+				<img src="image/goa3.jpg" width="140px" class="nubra">
+				<a>Goa &#8680; Calangute &#8680; Pangong Lake &#8680; Palolem Beach &#8680; Vasco Da Gama &#8680; Regis Magos &#8658; Rs.30,000 only</a>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav2()"><div class="box12"></span>
+	<script>
+function openNav2() {
+    document.getElementById("mySidenav2").style.width = "730px";
+}
+
+function closeNav2() {
+    document.getElementById("mySidenav2").style.width = "0";
+}
+</script>
+<div class="tour8">
+		<li>T</li>
+		<li>O</li>
+		<li>U</li>
+		<li>R</li><br>
+		<li>P</li>
+		<li>A</li>
+		<li>C</li>
+		<li>K</li>
+		<li>A</li>
+		<li>G</li>
+		<li>E</li>
+		<li>S</li>
+	</div>
+		</article>
+		<article>
+			<div class="box3"></div>
+			<div class="image3"><img src="image/Kerala-backwaters.-Kerala-India.jpg" width="700px"></div>
+			<div class="kerala">Kerala</div>
+			<div class="matter3">
+				<p>
+					The advent of monsoon makes Kerala<br><br> dreamlike.The lush beauty of God's Own
+				</p>
+			</div>
+			<div class="learn3"><a href="Tour1.html">Learn More</a></div>
+			<div id="mySidenav3" class="sidenav3">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">&times;</a>
+		<div class="package3">Kerala</div>
+			<div class="tour24">3 Days</div>
+				<img src="image/kerala1.jpg" width="140px" class="leh">
+				<a>Kerala &#8680; Munnar &#8680; Cochin &#8680; Kerala &#8658; Rs. 15,000 only</a>
+			<div class="tour25">5 Days</div>
+				<img src="image/kerala2.jpg" width="140px" class="pangong">
+				<a>Kerala &#8680; Trivandrum &#8680; Kovalam &#8680; Houseboat &#8680; Alleppey &#8658; Rs. 25,000 only</a>
+			<div class="tour26">7 Days</div>
+				<img src="image/kerala3.jpg" width="140px" class="nubra">
+				<a>Kovalam &#8680; Trivandrum &#8680; Houseboat &#8680; Periyar &#8680; Munnar &#8680; Cochin &#8658; Rs. 35,000 only</a>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav3()"><div class="box13"></span>
+	<script>
+function openNav3() {
+    document.getElementById("mySidenav3").style.width = "730px";
+}
+
+function closeNav3() {
+    document.getElementById("mySidenav3").style.width = "0";
+}
+</script>
+<div class="tour9">
+		<li>T</li>
+		<li>O</li>
+		<li>U</li>
+		<li>R</li><br>
+		<li>P</li>
+		<li>A</li>
+		<li>C</li>
+		<li>K</li>
+		<li>A</li>
+		<li>G</li>
+		<li>E</li>
+		<li>S</li>
+	</div>
+		</article>
+		<article>
+			<div class="box5"></div>
+			<div class="image5"><img src="image/uttarakhand-tourist-places-pictures-9.jpg"width="700px"></div>
+			<div class="uttrakhand">Uttrakhand</div>
+			<div class="matter5">
+				<p>
+					There is not just one reason why Uttrakhand<br><br> is fondly albeit reverentially referred to as Dev
+				</p>
+			</div>
+			<div class="learn5"><a href="Tour1.html">Learn More</a></div>
+			<div id="mySidenav5" class="sidenav5">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav5()">&times;</a>
+			<div class="package5">Uttrakhand</div>
+			<div class="tour27">3 Days</div>
+				<img src="image/uttrakhand1.jpg" width="140px" class="leh">
+				<a>Uttrakhand &#8680; Ganges &#8680; Nanda Devi &#8680; Uttrakhand &#8658; Rs.10,000 only</a>
+			<div class="tour28">5 Days</div>
+				<img src="image/uttrakhand2.jpg" width="140px" class="pangong">
+				<a>Uttrakhand &#8680; Nainital Lake &#8680; Tugnath &#8680; Uttrakhand &#8658; Rs. 20,000 only</a>
+			<div class="tour29">7 Days</div>
+				<img src="image/uttrakhand3.jpg" width="140px" class="nubra">
+				<a>Uttrakhand &#8680; Nainital Lake &#8680; Kempty Falls &#8680; Naini Lake &#8680; Roopkund &#8680; Uttrakhand &#8658; Rs. 30,000 only</a>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav5()"><div class="box15"></span>
+	<script>
+function openNav5() {
+    document.getElementById("mySidenav5").style.width = "730px";
+}
+
+function closeNav5() {
+    document.getElementById("mySidenav5").style.width = "0";
+}
+</script>
+<div class="tour10">
+		<li>T</li>
+		<li>O</li>
+		<li>U</li>
+		<li>R</li><br>
+		<li>P</li>
+		<li>A</li>
+		<li>C</li>
+		<li>K</li>
+		<li>A</li>
+		<li>G</li>
+		<li>E</li>
+		<li>S</li>
+	</div>
+		</article>
+		<article>
+			<div class="box6"></div>
+			<div class="image6"><img src="image/Khajjiar.jpg" width="700px"></div>
+			<div class="hp">Himachal Pradesh</div>
+			<div class="matter6">
+				<p>
+					The nature has a strange phenomenon of<br><br> sometimes packaging all its ethereal glory,its
+				</p>
+			</div>
+			<div class="learn6"><a href="Tour1.html">Learn More</a></div>
+			<div id="mySidenav6" class="sidenav6">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav6()">&times;</a>
+			<div class="package6">Himachal Pradesh</div>
+			<div class="tour28">3 Days</div>
+				<img src="image/himachal1.jpg" width="140px" class="leh">
+				<a>Himachal Pradesh &#8680; Kufri &#8680; The Vice Regal Lodge &#8680; State Museum &#8658; Rs.20,000 only</a>
+			<div class="tour29">5 Days</div>
+				<img src="image/himachal2.jpg" width="140px" class="pangong">
+				<a>State Museum &#8680; Mall & Church Shimla &#8680; Gaiety Theatre &#8680; Scandal Point &#8658; Rs. 30,000 only</a>
+			<div class="tour30">7 Days</div>
+				<img src="image/himachal3.jpg" width="140px" class="nubra">
+				<a>Himachal Pradesh &#8680; Manali &#8680; Hidimba Temple &#8680; Manu Maharaj Temple &#8680; Van Vihar Park &#8680; Vashisth &#8658; Rs. 40,000 only</a>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav6()"><div class="box16"></span>
+	<script>
+function openNav6() {
+    document.getElementById("mySidenav6").style.width = "730px";
+}
+
+function closeNav6() {
+    document.getElementById("mySidenav6").style.width = "0";
+}
+</script>
+<div class="tour11">
+		<li>T</li>
+		<li>O</li>
+		<li>U</li>
+		<li>R</li><br>
+		<li>P</li>
+		<li>A</li>
+		<li>C</li>
+		<li>K</li>
+		<li>A</li>
+		<li>G</li>
+		<li>E</li>
+		<li>S</li>
+	</div>
+		</article>
+		<article>
+			<div class="box7"></div>
+			<div class="image7"><img src="image/para_manali_98.jpg.jpg" width="700px"></div>
+			<div class="manali">Manali</div>
+			<div class="matter7">
+				<p>
+					Manali the popular hill-station of India is often<br><br>  flocked by tourists.There are a number of
+				</p>
+			</div>
+			<div class="learn7"><a href="Tour1.html">Learn More</a></div>
+			<div id="mySidenav7" class="sidenav7">
+			<div class="package7">Manali</div>
+			<div class="tour31">3 Days</div>
+				<img src="image/manali1.jpg" width="140px" class="leh">
+				<a>Manali &#8680; Hidimba Temple &#8680; Manu Maharaj Temple &#8680; Van Vihar Park &#8658; Rs. 10,000 only</a>
+			<div class="tour32">5 Days</div>
+				<img src="image/manali2.jpg" width="140px" class="pangong">
+				<a>Vashisth &#8680; Gulaba &#8680; Solang Valley &#8680;Chandigarh &#8658; Rs. 20,000 only</a>
+			<div class="tour33">7 Days</div>
+				<img src="image/manali3.jpg" width="140px" class="nubra">
+				<a>Dharmshala &#8680; Dalhousie &#8680; Khajjiar &#8680; Chamba &#8680; McLeodganj &#8680; Dharmshala &#8658; Rs. 30,000 only</a>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav7()"><div class="box17"></span>
+	<script>
+function openNav7() {
+    document.getElementById("mySidenav7").style.width = "730px";
+}
+
+function closeNav7() {
+    document.getElementById("mySidenav7").style.width = "0";
+}
+</script>
+<div class="tour12">
+		<li>T</li>
+		<li>O</li>
+		<li>U</li>
+		<li>R</li><br>
+		<li>P</li>
+		<li>A</li>
+		<li>C</li>
+		<li>K</li>
+		<li>A</li>
+		<li>G</li>
+		<li>E</li>
+		<li>S</li>
+	</div>
+		</article>
+		<article>
+			<div class="box8"></div>
+			<div class="image8"><img src="image/unnamed.jpg" width="700px"></div>
+			<div class="andaman">Andaman</div>
+			<div class="matter8">
+				<p>
+					Visit to Andaman in July is replete with an <br><br>amazing tropical weather and occasional
+				</p>
+			</div>
+			<div class="learn8"><a href="Tour1.html">Learn More</a></div>
+			<div id="mySidenav8" class="sidenav8">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav8()">&times;</a>
+		<div class="package8">Andaman</div>
+			<div class="tour34">3 Days</div>
+				<img src="image/andaman1.jpg" width="140px" class="leh">
+				<a>Andaman &#8680; Carbyn's Cove  &#8680; Radhanagar &#8680; Elephanta &#8658; Rs. 15,000 only</a>
+			<div class="tour35">5 Days</div>
+				<img src="image/andaman2.jpg" width="140px" class="pangong">
+				<a>Carbyn's Cove &#8680; Cellular Jail &#8680; National Memorial Jail &#8680; Andaman &#8658; Rs. 25,000 only</a>
+			<div class="tour36">7 Days</div>
+				<img src="image/andaman3.jpg" width="140px" class="nubra">
+				<a>Lime Stone Cave &#8680; Mud Volcano &#8680; Havalock Island &#8680; Radhanagar Beach &#8680; Ross Island &#8680; Havelock &#8658; Rs. 35,000 only</a>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav8()"><div class="box18"></span>
+	<script>
+function openNav8() {
+    document.getElementById("mySidenav8").style.width = "730px";
+}
+
+function closeNav8() {
+    document.getElementById("mySidenav8").style.width = "0";
+}
+</script>
+<div class="tour13">
+		<li>T</li>
+		<li>O</li>
+		<li>U</li>
+		<li>R</li><br>
+		<li>P</li>
+		<li>A</li>
+		<li>C</li>
+		<li>K</li>
+		<li>A</li>
+		<li>G</li>
+		<li>E</li>
+		<li>S</li>
+	</div>
+		</article>
+		<article>
+			<div class="box9"></div>
+			<div class="image9"><img src="image/AAG_Exterior1w-3x2.jpg" width="700px"></div>
+			<div class="udaipur">Udaipur</div>
+			<div class="matter9">
+				<p>
+					Romance is most the conspicuous and <br><br>essential element is Udaipur as its stunning
+				</p>
+			</div>
+			<div class="learn9"><a href="Tour1.html">Learn More</a></div>
+			<div id="mySidenav9" class="sidenav9">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav9()">&times;</a>
+		<div class="package9">Udaipur</div>
+			<div class="tour37">3 Days</div>
+				<img src="image/udaipur1.jpg" width="140px" class="leh">
+				<a>Udaipur &#8680; Mount Abu  &#8680; Udaipur &#8658; Rs. 15,000 only</a>
+			<div class="tour38">5 Days</div>
+				<img src="image/udaipur2.jpg" width="140px" class="pangong">
+				<a>Jaipur &#8680; Jodhpur &#8680; Udaipur &#8680; Jaipur &#8658; Rs. 25,000 only</a>
+			<div class="tour39">7 Days</div>
+				<img src="image/udaipur3.jpg" width="140px" class="nubra">
+				<a>Udaipur &#8680; Chittaurgarh &#8680; Bundi &#8680; Jaipur &#8658; Rs. 35,000 only</a>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav9()"><div class="box19"></span>
+	<script>
+function openNav9() {
+    document.getElementById("mySidenav9").style.width = "730px";
+}
+
+function closeNav9() {
+    document.getElementById("mySidenav9").style.width = "0";
+}
+</script>
+<div class="tour14">
+		<li>T</li>
+		<li>O</li>
+		<li>U</li>
+		<li>R</li><br>
+		<li>P</li>
+		<li>A</li>
+		<li>C</li>
+		<li>K</li>
+		<li>A</li>
+		<li>G</li>
+		<li>E</li>
+		<li>S</li>
+	</div>
+		</article>
+	</section>
+	<footer>
+    	<div class="box4"></div>
+        <div class="need">Need Help ?</div>
+        <div class="message"><img src="image/message.png" width="50px"></div>
+		<div class="phone-icon"><img src="image/page1_icon2.png" width="40px"></div>
+		<div class="no">
+			<li>+4542344599</li><br><br>
+			<li>help@pearltours.com</li>
+		</div>
+		<div class="about-heading">
+			<li>Discover</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li>Follow Us</li>
+		</div>
+		<div class="city-tours">
+			<li><a href="Tour.html">Domestic Tour</a></li><br>
+			<li><a href="International Tour.html">International Tour</a></li><br>
+			<li><a href="Spiritual Tour.html">Spiritual Tour</a></li><br>
+			<li><a href="Museum Tour.html">Museum Tour</a></li><br>
+			<li><a href="Heritage Tour.html">Heritage Tour</a></li><br>
+		</div>
+		<div class="icons">
+			<a href="facebook.com"><img src="image/icon1.png" class="icon1"></a>
+			<a href="twitter.com"><img src="image/icon2.png" class="icon2"></a>
+			<a href=""><img src="image/icon3.png" class="icon3"></a>
+			<a href=""><img src="image/icon4.png" class="icon4"></a>
+			<a href=""><img src="image/icon5.png" class="icon5"></a>
+			<a href=""><img src="image/icon6.png" class="icon6"></a>
+		</div>
+		</div>
+		</div>
+		</div>
+   	</footer>
+</body>
+</html>

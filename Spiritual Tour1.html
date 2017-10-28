@@ -1,0 +1,402 @@
+<!DOCTYPE HTML>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1.0"/>
+	<link type="text/css" rel="stylesheet" href="css/spiritual tour1.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+		<div class="box"></div>
+		<div class="pearl">Pearl</div>
+		<div class="tour">Tour And Travel</div>
+		<div class="slider">
+			<div class="slideshow-container">
+			<div class="mySlides fade">
+				<img src="image/tour5.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="image/tour2.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="image/tour1.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="image/tour4.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="image/tour6.jpg" style="width:100%">
+			</div>
+			<a class="prev" onClick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onClick="plusSlides(1)">&#10095;</a>
+			<div style="text-align:center">
+			  <span class="dot" onClick="currentSlide(1)"></span> 
+			  <span class="dot" onClick="currentSlide(2)"></span> 
+			  <span class="dot" onClick="currentSlide(3)"></span> 
+			  <span class="dot" onClick="currentSlide(4)"></span> 
+			</div>
+		</div>
+			<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+				
+				function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
+				
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+				
+				function showSlides(n) {
+				  var i;
+				  var slides = document.getElementsByClassName("mySlides");
+				  var dots = document.getElementsByClassName("dot");
+				  if (n > slides.length) {slideIndex = 1}    
+				  if (n < 1) {slideIndex = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+					  slides[i].style.display = "none";  
+				  }
+				  for (i = 0; i < dots.length; i++) {
+					  dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " active";
+				}
+			 </script>
+		</div>
+		<div class="menu">
+			<ul>
+				<li><a href="Home.html">Home</a></li>
+				<li><a href="About.html">About</a></li>
+				<li><a href="Services.html">Services</a>
+				<li><a href="Tour.html">Tour package</a>
+					<ul>
+						<li><a href="Tour.html">Domestic Tour</a></li>
+						<li><a href="International Tour.html">International Tour</a></li>
+						<li><a href="Museum Tour.html">Museum Tour</a></li>
+						<li><a href="Spiritual Tour.html">Spiritual Tour</a></li>
+						<li><a href="Heritage Tour.html">Heritage Tour</a></li>
+					</ul>
+				</li>
+				<li><a href="Contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<li>Tour Packages</li>
+			<a href="Tour.html"><img class="domestic" src="image/7749edf7a81a972445ba6f0ea2909d17_1920x1280.jpg"></a>
+			<div class="tour2"><a href="Tour.html">Domestic Tour</a></div>
+			<a href="International Tour.html"><img class="international" src="image/11.07.18-bcp_ft_australia-3_17191420.jpg"></a>
+			<div class="tour3"><a href="International Tour.html">International Tour</a></div>
+			<a href="Museum Tour.html"><img class="museum" src="image/national-gallery-of-art.jpg"></a>
+			<div class="tour4"><a href="Museum Tour.html">Museum Tour</a></div>
+			<a href="Spiritual Tour.html"><img class="spiritual" src="image/6e98050d2bb5eb371a2716bd6d3f32be--fatima-portugal-european-travel.jpg"></a>
+			<div class="tour5"><a href="Spiritual Tour.html">Spiritual Tour</a></div>
+			<a href="Heritage Tour.html"><img class="heritage-1" src="image/5.jpg"></a>
+			<div class="tour6"><a href="Heritage Tour.html">Heritage Tour</a></div>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()"><div class="box10"></span>
+	<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "950px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<div class="tour1">
+		<li>T</li>
+		<li>O</li>
+		<li>U</li>
+		<li>R</li><br>
+		<li>P</li>
+		<li>A</li>
+		<li>C</li>
+		<li>K</li>
+		<li>A</li>
+		<li>G</li>
+		<li>E</li>
+		<li>S</li>
+	</div>
+</header>
+<section>
+		<article>
+			<div class="spiritual1">Spiritual Tour</div>
+			<div class="box1"></div>
+			<div class="image1"><img src="image/DSC02756.jpg" width="700px"></div>
+			<div class="vaishno">Vaishno Devi</div>
+			<div class="matter1">
+				<p>
+					Vaishno Devi also known as Mata Rani,Trikuta<br>and Vaishnavi,is a manifestation of the Hindu<br>Mother Goddess Mahalakshmi.The words "maa"<br>and "mata" are commonly used in India for<br>"mother" and thus are often used in conection<br>with Vaishno devi.Vaishno Devi Mandir is a<br>Hindu temple dedicated to the Hindu Goddess,<br>located in Katra at the Trikuta Mountains within<br>the Indaian State of jammu and Kashmir. 
+				</p>
+			</div>
+			<div class="learn1">Learn More</div>
+			<div id="mySidenav1" class="sidenav1">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+		<div class="package1">Vaishno Devi</div>
+			<div class="tour20">3 Days</div>
+				<img src="image/vaishno1.jpg" width="140px" class="leh">
+				<a>Jammu &#8680; Katra &#8680; Jammu &#8658; Rs. 20,000 only</a>
+			<div class="tour21">5 Days</div>
+				<img src="image/vaishno2.jpg" width="140px" class="pangong">
+				<a>Katra &#8680; Shiv Khori &#8680; Patnitop &#8658; Rs.30,000 only</a>
+			<div class="tour22">7 Days</div>
+				<img src="image/vaishno3.jpg" width="140px" class="nubra">
+				<a>Katra &#8680; Patnitop &#8680; Srinagar &#8680; Gulmarg &#8680; Pahalgam &#8658; Rs.40,000 only</a>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav1()"><div class="box11"></span>
+	<script>
+function openNav1() {
+    document.getElementById("mySidenav1").style.width = "730px";
+}
+
+function closeNav1() {
+    document.getElementById("mySidenav1").style.width = "0";
+}
+</script>
+<div class="tour7">
+		<li>T</li>
+		<li>O</li>
+		<li>U</li>
+		<li>R</li><br>
+		<li>P</li>
+		<li>A</li>
+		<li>C</li>
+		<li>K</li>
+		<li>A</li>
+		<li>G</li>
+		<li>E</li>
+		<li>S</li>
+	</div>
+		</article>
+		<article>
+			<div class="box2"></div>
+			<div class="image2"><img src="image/amarnath.jpg" width="700px"></div>
+			<div class="amarnath">Amarnath</div>
+			<div class="matter2">
+				<p>
+					Amarnath Cave is a hindu shrine located in<br>Jammu And Kashmir,India.The cave is situated<br>at an altitude of 3,888m from Srinagar,the<br>summer capital of Jammu and Kashmir and<br>sreached through Pahalgam town.The shrine<br>forms an important part of Hinduism and is<br>considered to be one of the holiestshrines in Hinduism.
+				</p>
+			</div>
+			<div class="learn2">Learn More</div>
+			<div id="mySidenav2" class="sidenav2">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+		<div class="package2">Amarnath Cave</div>
+			<div class="tour23">3 Days</div>
+				<img src="image/amarnath1.jpg" width="140px" class="leh">
+				<a>Srinagar &#8680; Pahalgam &#8680; Panjtarni &#8680; Amarnath Cave &#8658; Rs.30,000 only</a>
+			<div class="tour24">5 Days</div>
+				<img src="image/amarnath2.jpg" width="140px" class="pangong">
+				<a>Srinagar &#8680; Pahalgam &#8680; Amarnath Cave &#8680; Pahalgam &#8680; Srinagar &#8680; Delhi &#8658; Rs. 40,000 only</a>
+			<div class="tour25">7 Days</div>
+				<img src="image/amarnath3.jpg" width="140px" class="nubra">
+				<a>Delhi &#8680; Srinagar &#8680; Pahalgam &#8680; Chandanwari &#8680; Sheshnag &#8680; Panjtarni &#8680; Baltal &#8680; Sonamara &#8680; Srinagar &#8680; Delhi &#8658; Rs.55,000 only</a>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav2()"><div class="box12"></span>
+	<script>
+function openNav2() {
+    document.getElementById("mySidenav2").style.width = "730px";
+}
+
+function closeNav2() {
+    document.getElementById("mySidenav2").style.width = "0";
+}
+</script>
+<div class="tour8">
+		<li>T</li>
+		<li>O</li>
+		<li>U</li>
+		<li>R</li><br>
+		<li>P</li>
+		<li>A</li>
+		<li>C</li>
+		<li>K</li>
+		<li>A</li>
+		<li>G</li>
+		<li>E</li>
+		<li>S</li>
+	</div>
+		</article>
+        	<article>
+			<div class="box3"></div>
+			<div class="image3"><img src="image/A-closeup-view-of-Somnath-Temple-1-1024x769.jpg" width="700px"></div>
+			<div class="sa">Somnath Temple</div>
+			<div class="matter3">
+				<p>
+					The Somnath Temple located in Prabhas Patan<br>near Veravai in Saurashtra on the western coast<br>of Gujarat is belived to be the first among the<br>twelve jyotrilinga shrines of Shiva.It is an<br>important pilgrimage and tourist spot of Gujarat.<br>Destroyed and reconstructed several times in<br>the past the present temple temple was<br>reconstructed in Chalukya style of Hindu temple.
+				</p>
+			</div>
+			<div class="learn3">Learn More</div>
+			<div id="mySidenav3" class="sidenav3">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">&times;</a>
+		<div class="package3">Somnath Temple</div>
+			<div class="tour24">3 Days</div>
+				<img src="image/somnath1.jpg" width="140px" class="leh">
+				<a>Dwarka &#8680; Porbandar &#8680; Somnath &#8658; Rs. 25,000 only</a>
+			<div class="tour25">5 Days</div>
+				<img src="image/somnath2.jpg" width="140px" class="pangong">
+				<a>Jamnagar &#8680; Dwarka &#8680; Somnath &#8680; Rajkot &#8658; Rs. 35,000 only</a>
+			<div class="tour26">7 Days</div>
+				<img src="image/somnath3.jpg" width="140px" class="nubra">
+				<a>Bhuj &#8680; Daman & Diu &#8680; Dwarka &#8680; Jamnagar &#8680; Mandvi &#8680; Somnath &#8658; Rs. 45,000 only</a>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav3()"><div class="box13"></span>
+	<script>
+function openNav3() {
+    document.getElementById("mySidenav3").style.width = "730px";
+}
+
+function closeNav3() {
+    document.getElementById("mySidenav3").style.width = "0";
+}
+</script>
+<div class="tour9">
+		<li>T</li>
+		<li>O</li>
+		<li>U</li>
+		<li>R</li><br>
+		<li>P</li>
+		<li>A</li>
+		<li>C</li>
+		<li>K</li>
+		<li>A</li>
+		<li>G</li>
+		<li>E</li>
+		<li>S</li>
+	</div>
+		</article>
+		<article>
+			<div class="box5"></div>
+			<div class="image5"><img src="image/sai_gold_full www.shrishirdisaimandir.org.jpg"width="700px"></div>
+			<div class="shirdi">Shirdi</div>
+			<div class="matter5">
+				<p>
+					Shirdi is a town in the jurisdication of the municipal<br>council popularly known as Shirdi Nagar Panchayat,<br>located in Rahara Taluka in Ahmedanagar District in<br>the Indian State of Maharashtra.It is accessible via<br>the Ahmedanagar-Mammad State Highway No.10<br>,appropriately 83km from Ahmedanagar and 15km<br>from Kopargaon.
+				</p>
+			</div>
+			<div class="learn5">Learn More</div>
+			<div id="mySidenav5" class="sidenav5">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav5()">&times;</a>
+		<div class="package5">Shirdi</div>
+			<div class="tour27">3 Days</div>
+				<img src="image/shirdi1.jpg" width="140px" class="leh">
+				<a>Shirdi &#8680; Nashik &#8680; Aurangabad &#8658; Rs. 20,000 only</a>
+			<div class="tour28">5 Days</div>
+				<img src="image/shirdi2.jpg" width="140px" class="pangong">
+				<a>Mumbai &#8680; Shirdi &#8680; Aurangabad &#8680; Mumbai &#8658; Rs. 30,000 only</a>
+			<div class="tour29">7 Days</div>
+				<img src="image/shirdi3.jpg" width="140px" class="nubra">
+				<a>Mumbai &#8680; Shirdi &#8680; Aurangabad &#8680; Varanasi &#8658; Rs. 40,000 only</a>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav5()"><div class="box15"></span>
+	<script>
+function openNav5() {
+    document.getElementById("mySidenav5").style.width = "730px";
+}
+
+function closeNav5() {
+    document.getElementById("mySidenav5").style.width = "0";
+}
+</script>
+<div class="tour10">
+		<li>T</li>
+		<li>O</li>
+		<li>U</li>
+		<li>R</li><br>
+		<li>P</li>
+		<li>A</li>
+		<li>C</li>
+		<li>K</li>
+		<li>A</li>
+		<li>G</li>
+		<li>E</li>
+		<li>S</li>
+	</div>
+		</article>
+		 <article>
+			<div class="box6"></div>
+			<div class="image6"><img src="image/Tirupati-Balaji-3.jpg" width="700px"></div>
+			<div class="balaji">Mehandir Balaji Mandir </div>
+			<div class="matter6">
+				<p>
+					Mehandir Balaji Mandir is a noted Hindu temple,<br>mandir in Dausa districtof Rajasthan dedicated to the<br>Hindu God Hanuman.The name Balaji is applied to<br>Shri Hanuman in several parts of India because the<br>childhood form of the Lord is especially celebrated there.<br>The temple is dedicated to Balaji.Unlike similar religion<br>sites.It is located in atown rather than the countryside.
+				</p>
+			</div>
+			<div class="learn6">Learn More</div>
+			<div id="mySidenav6" class="sidenav6">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav6()">&times;</a>
+		<div class="package6">Mehandir Balaji Mandir</div>
+			<div class="tour28">3 Days</div>
+				<img src="image/balaji1.jpg" width="140px" class="leh">
+				<a>Chennai &#8680; Tirupati &#8658; Rs. 40,000 only</a>
+			<div class="tour29">5 Days</div>
+				<img src="image/balaji2.jpg" width="140px" class="pangong">
+				<a>Chennai &#8680; Tirupati &#8680; Pondicherry &#8680; Chennai &#8658; Rs. 50,000 only</a>
+			<div class="tour30">7 Days</div>
+				<img src="image/balaji3.jpg" width="140px" class="nubra">
+				<a>Chennai &#8680; Tirupati &#8680; Mahabalipuram &#8680; Pondicherry &#8658; Rs. 60,000 only</a>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav6()"><div class="box16"></span>
+	<script>
+function openNav6() {
+    document.getElementById("mySidenav6").style.width = "730px";
+}
+
+function closeNav6() {
+    document.getElementById("mySidenav6").style.width = "0";
+}
+</script>
+<div class="tour11">
+		<li>T</li>
+		<li>O</li>
+		<li>U</li>
+		<li>R</li><br>
+		<li>P</li>
+		<li>A</li>
+		<li>C</li>
+		<li>K</li>
+		<li>A</li>
+		<li>G</li>
+		<li>E</li>
+		<li>S</li>
+	</div>
+		</article>
+	</section>
+	<footer>
+    	<div class="box4"></div>
+        <div class="need">Need Help ?</div>
+        <div class="message"><img src="image/message.png" width="50px"></div>
+		<div class="phone-icon"><img src="image/page1_icon2.png" width="40px"></div>
+		<div class="no">
+			<li>+4542344599</li><br><br>
+			<li>help@pearltours.com</li>
+		</div>
+		<div class="about-heading">
+			<li>Discover</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li>Follow Us</li>
+		</div>
+		<div class="city-tours">
+			<li><a href="Tour.html">Domestic Tour</a></li><br>
+			<li><a href="International Tour.html">International Tour</a></li><br>
+			<li><a href="Spiritual Tour.html">Spiritual Tour</a></li><br>
+			<li><a href="Museum Tour.html">Museum Tour</a></li><br>
+			<li><a href="Heritage Tour.html">Heritage Tour</a></li><br>
+		</div>
+		<div class="icons">
+			<a href="facebook.com"><img src="image/icon1.png" class="icon1"></a>
+			<a href="twitter.com"><img src="image/icon2.png" class="icon2"></a>
+			<a href=""><img src="image/icon3.png" class="icon3"></a>
+			<a href=""><img src="image/icon4.png" class="icon4"></a>
+			<a href=""><img src="image/icon5.png" class="icon5"></a>
+			<a href=""><img src="image/icon6.png" class="icon6"></a>
+		</div>
+   	</footer>
+</body>
+</html>
+	
+
+
+		
+       
+	

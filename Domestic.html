@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1.0"/>
+	<link type="text/css" rel="stylesheet" href="css/domestic.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+		<div class="box"></div>
+		<div class="pearl">Pearl</div>
+		<div class="tour">Tour And Travel</div>
+		<div class="slider">
+			<div class="slideshow-container">
+			<div class="mySlides fade">
+				<img src="image/tour5.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="image/tour2.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="image/tour1.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="image/tour4.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="image/tour6.jpg" style="width:100%">
+			</div>
+			<a class="prev" onClick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onClick="plusSlides(1)">&#10095;</a>
+			<div style="text-align:center">
+			  <span class="dot" onClick="currentSlide(1)"></span> 
+			  <span class="dot" onClick="currentSlide(2)"></span> 
+			  <span class="dot" onClick="currentSlide(3)"></span> 
+			  <span class="dot" onClick="currentSlide(4)"></span> 
+			</div>
+		</div>
+			<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+				
+				function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
+				
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+				
+				function showSlides(n) {
+				  var i;
+				  var slides = document.getElementsByClassName("mySlides");
+				  var dots = document.getElementsByClassName("dot");
+				  if (n > slides.length) {slideIndex = 1}    
+				  if (n < 1) {slideIndex = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+					  slides[i].style.display = "none";  
+				  }
+				  for (i = 0; i < dots.length; i++) {
+					  dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " active";
+				}
+			 </script>
+		</div>
+		<div class="menu">
+			<ul>
+				<li><a href="Home.html">Home</a></li>
+				<li><a href="About.html">About</a></li>
+				<li><a href="Services.html">Services</a>
+				<li><a href="Tour.html">Tour package</a>
+					<ul>
+						<li><a href="Tour.html">Domestic Tour</a></li>
+						<li><a href="International Tour.html">International Tour</a></li>
+						<li><a href="Museum Tour.html">Museum Tour</a></li>
+						<li><a href="Spiritual Tour.html">Spiritual Tour</a></li>
+						<li><a href="Heritage Tour.html">Heritage Tour</a></li>
+					</ul>
+				</li>
+				<li><a href="Contact.html">Contact</a></li>
+			</ul>
+		</div>
+</header>
+<section>
+
+	<div class="image1"><img src="image/V644_Tupolev_Tu.124_Indian_Air_Force_(8448371894).jpg" width="700px"></div>
+			<div class="air">Air Force Museum</div>
+			<div class="matter1">
+				<p>
+					Situated at the Palam Air Force Station<br>in Delhi,the Indian Air Force Museum
+				</p>
+			</div>
+			<button class="accordion"></button>
+			<div class="panel1">
+				<li>
+					displays a huge collection of aeroplanes <br>and armoury 
+					reflecting the Indian Air<br> Force history.It showcases
+					the great <br>achivements of the Indian Air Force<br> along 
+					with the best of what it has stood<br> for in the war 
+					and peace.<br><br>
+					This museum of the Indian Air Force is worth<br> visiting
+					for children,tourists and aviation <br>entusiasts.It offers 
+					an enriching experience <br>along with the in-depth information
+					from the <br>early days when Indian aviators flew for <br>
+					the Royal Flying Corps during the First<br> World hid War
+					to the Kargil Operations.					
+				</li>
+			
+			<script>
+					var acc = document.getElementsByClassName("accordion");
+					var i;
+					for (i = 0; i <acc.length; i++) {
+						acc[i].onclick = function(){
+							this.classList.toggle( "active" );
+							var panel1 = this.nextElementSibling;
+							if (panel1.style.display === "block"){
+								panel1.style.display = "none";
+							}
+							else {
+								panel1.style.display = "block";
+							}
+						}
+					}
+			</script>
+		</div>
+		<div>
+			<div class="box2"></div>
+			<div class="image2"><img src="image/national-handicrafts-and-handlooms-museum-entrance-gate.jpg" width="700px"></div>
+			<div class="handicrafts">National Handicrafts And<Br> Handloom Museum</div>
+			<div class="matter2">
+				<p>
+					The National Handicrafts and Handloom<br>Museum well known as the National
+				</p>
+			</div>
+			<div class="learn2">Learn More</div>
+		</div>

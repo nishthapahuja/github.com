@@ -1,0 +1,397 @@
+<!DOCTYPE HTML>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1.0"/>
+	<link type="text/css" rel="stylesheet" href="css/international tour.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+		<div class="box"></div>
+		<div class="pearl">Pearl</div>
+		<div class="tour">Tour And Travel</div>
+		<div class="slider">
+			<div class="slideshow-container">
+			<div class="mySlides fade">
+				<img src="image/tour5.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="image/tour2.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="image/tour1.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="image/tour4.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="image/tour6.jpg" style="width:100%">
+			</div>
+			<a class="prev" onClick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onClick="plusSlides(1)">&#10095;</a>
+			<div style="text-align:center">
+			  <span class="dot" onClick="currentSlide(1)"></span> 
+			  <span class="dot" onClick="currentSlide(2)"></span> 
+			  <span class="dot" onClick="currentSlide(3)"></span> 
+			  <span class="dot" onClick="currentSlide(4)"></span> 
+			</div>
+		</div>
+			<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+				
+				function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
+				
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+				
+				function showSlides(n) {
+				  var i;
+				  var slides = document.getElementsByClassName("mySlides");
+				  var dots = document.getElementsByClassName("dot");
+				  if (n > slides.length) {slideIndex = 1}    
+				  if (n < 1) {slideIndex = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+					  slides[i].style.display = "none";  
+				  }
+				  for (i = 0; i < dots.length; i++) {
+					  dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " active";
+				}
+			 </script>
+		</div>
+		<div class="menu">
+			<ul>
+				<li><a href="Home.html">Home</a></li>
+				<li><a href="About.html">About</a></li>
+				<li><a href="Services.html">Services</a>
+				<li><a href="Tour.html">Tour package</a>
+					<ul>
+						<li><a href="Tour.html">Domestic Tour</a></li>
+						<li><a href="International Tour.html">International Tour</a></li>
+						<li><a href="Museum Tour.html">Museum Tour</a></li>
+						<li><a href="Spiritual Tour.html">Spiritual Tour</a></li>
+						<li><a href="Heritage Tour.html">Heritage Tour</a></li>
+					</ul>
+				</li>
+				<li><a href="Contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<li>Tour Packages</li>
+			<a href="Tour.html"><img class="domestic" src="image/7749edf7a81a972445ba6f0ea2909d17_1920x1280.jpg"></a>
+			<div class="tour2"><a href="Tour.html">Domestic Tour</a></div>
+			<a href="International Tour.html"><img class="international" src="image/11.07.18-bcp_ft_australia-3_17191420.jpg"></a>
+			<div class="tour3"><a href="International Tour.html">International Tour</a></div>
+			<a href="Museum Tour.html"><img class="museum" src="image/national-gallery-of-art.jpg"></a>
+			<div class="tour4"><a href="Museum Tour.html">Museum Tour</a></div>
+			<a href="Spiritual Tour.html"><img class="spiritual" src="image/6e98050d2bb5eb371a2716bd6d3f32be--fatima-portugal-european-travel.jpg"></a>
+			<div class="tour5"><a href="Spiritual Tour.html">Spiritual Tour</a></div>
+			<a href="Heritage Tour.html"><img class="heritage-1" src="image/5.jpg"></a>
+			<div class="tour6"><a href="Heritage Tour.html">Heritage Tour</a></div>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()"><div class="box10"></span>
+	<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "950px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<div class="tour1">
+		<li>T</li>
+		<li>O</li>
+		<li>U</li>
+		<li>R</li><br>
+		<li>P</li>
+		<li>A</li>
+		<li>C</li>
+		<li>K</li>
+		<li>A</li>
+		<li>G</li>
+		<li>E</li>
+		<li>S</li>
+	</div>
+</header>
+<section>
+		<article>
+			<div class="international1">International Tour</div>
+			<div class="box1"></div>
+			<div class="image1"><img src="image/11.07.18-bcp_ft_australia-3_17191420.jpg" width="700px"></div>
+			<div class="australia">Australia</div>
+			<div class="matter1">
+				<p>
+					Australia is a country and continent surrounded<br>by the Indian and Pacific oceans.Its major cities
+				</p>
+			</div>
+			<div class="learn1"><a href="International Tour1.html">Learn More</a></div>
+			<div id="mySidenav1" class="sidenav1">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+			<div class="package1">Australia</div>
+			<div class="tour20">3 Days</div>
+				<img src="image/australia1.jpg" width="140px" class="leh">
+				<a>Gold Coast &#8680; Caims &#8680; Sydney &#8658; Rs.20,000 only</a>
+			<div class="tour21">5 Days</div>
+				<img src="image/australia2.jpg" width="140px" class="pangong">
+				<a>Christchurch &#8680; Twizel &#8680; Queenstown &#8680; Rotorua &#8658; Rs. 30,000 only</a>
+			<div class="tour22">7 Days</div>
+				<img src="image/australia3.jpg" width="140px" class="nubra">
+				<a>Auckland &#8680; Rotorua &#8680; Queenstown &#8680; Wanaka &#8680; Twizel &#8658; Rs. 40,000 only</a>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav1()"><div class="box11"></span>
+	<script>
+function openNav1() {
+    document.getElementById("mySidenav1").style.width = "730px";
+}
+
+function closeNav1() {
+    document.getElementById("mySidenav1").style.width = "0";
+}
+</script>
+<div class="tour7">
+		<li>T</li>
+		<li>O</li>
+		<li>U</li>
+		<li>R</li><br>
+		<li>P</li>
+		<li>A</li>
+		<li>C</li>
+		<li>K</li>
+		<li>A</li>
+		<li>G</li>
+		<li>E</li>
+		<li>S</li>
+	</div>
+		</article>
+		<article>
+			<div class="box2"></div>
+			<div class="image2"><img src="image/1363574092hair-vitamins-in-England[1].jpg" width="700px"></div>
+			<div class="uk">United Kingdom</div>
+			<div class="matter2">
+				<p>
+					The United Kingdom,made up of England,Scotland,<br>Wales and Northern Ireland,is an island nation in
+				</p>
+			</div>
+			<div class="learn2"><a href="International Tour1.html">Learn More</a></div>
+			<div id="mySidenav2" class="sidenav2">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+		<div class="package2">United Kingdom</div>
+			<div class="tour23">3 Days</div>
+				<img src="image/uk1.jpg" width="140px" class="leh">
+				<a>United Kingdom  &#8658; Rs.25,000 only</a>
+			<div class="tour24">5 Days</div>
+				<img src="image/uk2.jpg" width="140px" class="pangong">
+				<a>United Kingdom &#8680; France &#8680; Belgium &#8680; Germany &#8680; Switzerland &#8658; Rs. 35,000 only</a>
+			<div class="tour25">7 Days</div>
+				<img src="image/uk3.jpg" width="140px" class="nubra">
+				<a>United Kingdom &#8680; France &#8680; Neitherland &#8680; Austraia &#8680; Italy &#8680; Vatican &#8658; Rs.45,000 only</a>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav2()"><div class="box12"></span>
+	<script>
+function openNav2() {
+    document.getElementById("mySidenav2").style.width = "730px";
+}
+
+function closeNav2() {
+    document.getElementById("mySidenav2").style.width = "0";
+}
+</script>
+<div class="tour8">
+		<li>T</li>
+		<li>O</li>
+		<li>U</li>
+		<li>R</li><br>
+		<li>P</li>
+		<li>A</li>
+		<li>C</li>
+		<li>K</li>
+		<li>A</li>
+		<li>G</li>
+		<li>E</li>
+		<li>S</li>
+	</div>
+		</article>
+		<article>
+			<div class="box3"></div>
+			<div class="image3"><img src="image/SouthAfrica42.jpg" width="700px"></div>
+			<div class="sa">South Africa</div>
+			<div class="matter3">
+				<p>
+					South Africa is a country on the southernmost<br>tip of the African continent,marked by serval
+				</p>
+			</div>
+			<div class="learn3"><a href="International Tour1.html">Learn More</a></div>
+			<div id="mySidenav3" class="sidenav3">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">&times;</a>
+		<div class="package3">South Africa</div>
+			<div class="tour24">3 Days</div>
+				<img src="image/africa1.jpg" width="120px" class="leh">
+				<a>Capetown &#8680; Knysna &#8680; Port Elizabeth &#8658; Rs. 20,000 only</a>
+			<div class="tour25">5 Days</div>
+				<img src="image/africa2.jpg" width="120px" class="pangong">
+				<a>Capetown &#8680; Knysna &#8680; Port Elizabeth &#8680; Sun City &#8658; Rs. 30,000 only</a>
+			<div class="tour26">7 Days</div>
+				<img src="image/africa3.jpg" width="120px" class="nubra">
+				<a>Capetown &#8680; Knysna &#8680; Pilanesberg&#8680; Livingstone &#8680; Johannesburg &#8658; Rs. 40,000 only</a>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav3()"><div class="box13"></span>
+	<script>
+function openNav3() {
+    document.getElementById("mySidenav3").style.width = "730px";
+}
+
+function closeNav3() {
+    document.getElementById("mySidenav3").style.width = "0";
+}
+</script>
+<div class="tour9">
+		<li>T</li>
+		<li>O</li>
+		<li>U</li>
+		<li>R</li><br>
+		<li>P</li>
+		<li>A</li>
+		<li>C</li>
+		<li>K</li>
+		<li>A</li>
+		<li>G</li>
+		<li>E</li>
+		<li>S</li>
+	</div>
+		</article>
+		<article>
+			<div class="box5"></div>
+			<div class="image5"><img src="image/Oberhofen-Castle-Switzerland_1.jpg"width="700px"></div>
+			<div class="switzerland">Switzerland</div>
+			<div class="matter5">
+				<p>
+					Switzerland is a mountainous Central European<br>country,home to numerous lakes,villages and the
+				</p>
+			</div>
+			<div class="learn5"><a href="International Tour1.html">Learn More</a></div>
+			<div id="mySidenav5" class="sidenav5">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav5()">&times;</a>
+		<div class="package5">Switzerland</div>
+			<div class="tour27">3 Days</div>
+				<img src="image/switzerland1.jpg" width="140px" class="leh">
+				<a>France &#8680; Belgium &#8680; Germany &#8680; Switzerland &#8658; Rs. 20,000 only</a>
+			<div class="tour28">5 Days</div>
+				<img src="image/switzerland2.jpg" width="140px" class="pangong">
+				<a>United Kingdom &#8680; France &#8680; Belgium &#8680; Germany &#8658; Rs. 30,000 only</a>
+			<div class="tour29">7 Days</div>
+				<img src="image/switzerland3.jpg" width="140px" class="nubra">
+				<a>France &#8680; Switzerland &#8680; Italy &#8680; Vatican &#8680; Austraia &#8680; Germany &#8658; Rs. 40,000 only</a>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav5()"><div class="box15"></span>
+	<script>
+function openNav5() {
+    document.getElementById("mySidenav5").style.width = "730px";
+}
+
+function closeNav5() {
+    document.getElementById("mySidenav5").style.width = "0";
+}
+</script>
+<div class="tour10">
+		<li>T</li>
+		<li>O</li>
+		<li>U</li>
+		<li>R</li><br>
+		<li>P</li>
+		<li>A</li>
+		<li>C</li>
+		<li>K</li>
+		<li>A</li>
+		<li>G</li>
+		<li>E</li>
+		<li>S</li>
+	</div>
+		</article>
+		<article>
+			<div class="box6"></div>
+			<div class="image6"><img src="image/dubai-in-24-hours-panel-desktop.jpg" width="700px"></div>
+			<div class="dubai">Dubai</div>
+			<div class="matter6">
+				<p>
+					Dubai is a city and emirate in the United Arab Emirates<br>known for luxury shopping,ultramodern architecture
+				</p>
+			</div>
+			<div class="learn6"><a href="International Tour1.html">Learn More</a></div>
+			<div id="mySidenav6" class="sidenav6">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav6()">&times;</a>
+		<div class="package6">Dubai</div>
+			<div class="tour28">3 Days</div>
+				<img src="image/dubai1.jpg" width="120px" class="leh">
+				<a>Dubai &#8658;  Rs. 50,000 only</a>
+			<div class="tour29">5 Days</div>
+				<img src="image/dubai2.jpg" width="120px" class="pangong">
+				<a>Dubai &#8658; Rs. 70,000 only</a>
+			<div class="tour30">7 Days</div>
+				<img src="image/dubai3.jpg" width="120px" class="nubra">
+				<a>Dubai &#8658; Rs. 90,000 only</a>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav6()"><div class="box16"></span>
+	<script>
+function openNav6() {
+    document.getElementById("mySidenav6").style.width = "730px";
+}
+
+function closeNav6() {
+    document.getElementById("mySidenav6").style.width = "0";
+}
+</script>
+<div class="tour11">
+		<li>T</li>
+		<li>O</li>
+		<li>U</li>
+		<li>R</li>
+		<li>P</li>
+		<li>A</li>
+		<li>C</li>
+		<li>K</li>
+		<li>A</li>
+		<li>G</li>
+		<li>E</li>
+		<li>S</li>
+	</div>
+		</article>
+		
+	</section>
+	<footer>
+    	<div class="box4"></div>
+        <div class="need">Need Help ?</div>
+        <div class="message"><img src="image/message.png" width="50px"></div>
+		<div class="phone-icon"><img src="image/page1_icon2.png" width="40px"></div>
+		<div class="no">
+			<li>+4542344599</li><br><br>
+			<li>help@pearltours.com</li>
+		</div>
+		<div class="about-heading">
+			<li>Discover</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li>Follow Us</li>
+		</div>
+		<div class="city-tours">
+			<li><a href="Tour.html">Domestic Tour</a></li><br>
+			<li><a href="International Tour.html">International Tour</a></li><br>
+			<li><a href="Spiritual Tour.html">Spiritual Tour</a></li><br>
+			<li><a href="Museum Tour.html">Museum Tour</a></li><br>
+			<li><a href="Heritage Tour.html">Heritage Tour</a></li><br>
+		</div>
+		<div class="icons">
+			<a href="facebook.com"><img src="image/icon1.png" class="icon1"></a>
+			<a href="twitter.com"><img src="image/icon2.png" class="icon2"></a>
+			<a href=""><img src="image/icon3.png" class="icon3"></a>
+			<a href=""><img src="image/icon4.png" class="icon4"></a>
+			<a href=""><img src="image/icon5.png" class="icon5"></a>
+			<a href=""><img src="image/icon6.png" class="icon6"></a>
+		</div>
+   	</footer>
+</body>
+</html>

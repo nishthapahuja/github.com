@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1.0"/>
+	<link type="text/css" rel="stylesheet" href="css/services.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+		<div class="box"></div>
+		<div class="pearl">Pearl</div>
+		<div class="tour">Tour And Travel</div>
+		<div class="slider">
+			<div class="slideshow-container">
+			<div class="mySlides fade">
+				<img src="image/tour5.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="image/tour2.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="image/tour1.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="image/tour4.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="image/tour6.jpg" style="width:100%">
+			</div>
+			<a class="prev" onClick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onClick="plusSlides(1)">&#10095;</a>
+			<div style="text-align:center">
+			  <span class="dot" onClick="currentSlide(1)"></span> 
+			  <span class="dot" onClick="currentSlide(2)"></span> 
+			  <span class="dot" onClick="currentSlide(3)"></span> 
+			  <span class="dot" onClick="currentSlide(4)"></span> 
+			  <span class="dot" onClick="currentSlide(5)"></span> 
+			</div>
+		</div>
+			<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+				
+				function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
+				
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+				
+				function showSlides(n) {
+				  var i;
+				  var slides = document.getElementsByClassName("mySlides");
+				  var dots = document.getElementsByClassName("dot");
+				  if (n > slides.length) {slideIndex = 1}    
+				  if (n < 1) {slideIndex = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+					  slides[i].style.display = "none";  
+				  }
+				  for (i = 0; i < dots.length; i++) {
+					  dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " active";
+				}
+			 </script>
+		</div>
+		<div class="menu">
+			<ul>
+				<li><a href="Home.html">Home</a></li>
+				<li><a href="About.html">About</a></li>
+				<li><a href="Services.html">Services</a>
+				<li><a href="Tour.html">Tour package</a>
+					<ul>
+						<li><a href="Tour.html">Domestic Tour</a></li>
+						<li><a href="International Tour.html">International Tour</a></li>
+						<li><a href="Museum Tour.html">Museum Tour</a></li>
+						<li><a href="Spiritual Tour.html">Spiritual Tour</a></li>
+						<li><a href="Heritage Tour.html">Heritage Tour</a></li>
+					</ul>
+				</li>
+				<li><a href="Contact.html">Contact</a></li>
+			</ul>
+		</div>
+</header>
+<section>
+	<article>
+		<div class="how">How We Operate</div>
+		<div class="box1"></div>
+		<div class="we">
+			<p>
+				Our Products speak themselves truly showcase how we render customised<br>services to our valued clients,as we believe in providing "Tailor-Made Solution"<br>to all our esteemed clients,who may have specific requirement.These<br>requirements are undertaken by our dedicated clients servicing manager and<br>reveal your destination with an authenticity beyond the reach of any other<br>travel company.
+				<br><br>
+				Air Travel we are in-line with all the major domestic and International Airlines<br> across the globe to provide hassle free and state-of-the art services to our<br>esteemed clients.
+			</p>
+		</div>
+	</article>
+	<article>
+		<div class="provide">We Provide</div>
+		<div class="box2"></div>
+		<div class="icon1"><img src="image/domestic.png" width="80px"></div>
+		<div class="domestic">Domestic Air Travel</div>
+		<div class="air">
+			<li>Tie-ups with all the Airlines,operating domestically.</li><br>
+			<li>Online booking and issuing the tickets.</li><br>
+			<li>Delivering of tickets at your Door Steps upon request.</li><br>
+		</div>
+	</article>
+	<article>
+		<div class="icon2"><img src="image/international.png" width="80px"></div>
+		<div class="international">International Air Travel</div>
+		<div class="have">
+			<li>We have state-of-art-IT-technology,CRS</li><br>
+			<li>Acccess to all major international Airlines to reserve,book<br>&nbsp;&nbsp;&nbsp;&nbsp;and issue tickets.</li><br>
+			<li>Most competitive rates available in the market.</li><br>
+		</div>
+	</article>
+	<article>
+		<div class="icon3"><img src="image/visa.png"width="120px"></div>
+		<div class="visa">Visa Services</div>
+		<div class="our">
+			<p>
+				Our dedicated & experienced team provides all services starting<br><br> from obtaining client passports,procuring visas,and other travel<br><br> related documents for our international travelers.
+			</p>
+		</div>
+	</article>
+	<article>
+		<div class="icon4"><img src="image/medical.png" width="80px"></div>
+		<div class="overseas">Overseas Travel Cum <br>Medical Claim Insurance</div>
+		<div class="medical">
+			<p>
+				Our in-house dedicated team provides Overseas Medi Claim<br><br> policies to our clients who travels abroad,based on their<br><br> requirements and duratin of overseas stay.
+			</p>
+		</div>
+	</article>
+</section>
+<footer>
+    	<div class="box4"></div>
+        <div class="need">Need Help ?</div>
+        <div class="message"><img src="image/message.png" width="50px"></div>
+		<div class="phone-icon"><img src="image/page1_icon2.png" width="40px"></div>
+		<div class="no">
+			<li>+4542344599</li><br><br>
+			<li>help@pearltours.com</li>
+		</div>
+		<div class="about-heading">
+			<li>Discover</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li>Follow Us</li>
+		</div>
+		<div class="city-tours">
+			<li><a href="Tour.html">Domestic Tour</a></li><br>
+			<li><a href="International Tour.html">International Tour</a></li><br>
+			<li><a href="Spiritual Tour.html">Spiritual Tour</a></li><br>
+			<li><a href="Museum Tour.html">Museum Tour</a></li><br>
+			<li><a href="Heritage Tour.html">Heritage Tour</a></li><br>
+		</div>
+		<div class="icons">
+			<a href="facebook.com"><img src="image/icon1.png" class="icon1"></a>
+			<a href="twitter.com"><img src="image/icon2.png" class="icon2"></a>
+			<a href=""><img src="image/icon3.png" class="icon3"></a>
+			<a href=""><img src="image/icon4.png" class="icon4"></a>
+			<a href=""><img src="image/icon5.png" class="icon5"></a>
+			<a href=""><img src="image/icon6.png" class="icon6"></a>
+		</div>
+   	</footer>
+</body>
+</html>
